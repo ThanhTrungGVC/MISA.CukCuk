@@ -1,0 +1,128 @@
+﻿/*Content*/
+.container .content {
+    width: calc(100% - 230px);
+    height: 100%;
+}
+
+.content .title {
+    height: 50px;
+    width: 100%;
+    display: flex;
+}
+
+.title .title-link {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.title-link .title-parent {
+    line-height: 50px;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.title-link .icon-change-detail {
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+    background-image: url('/content/images/menu/show-detail.png');
+    background-repeat: no-repeat;
+}
+
+.title-link .title-child {
+    line-height: 50px;
+    font-size: 19px;
+    margin-left: 10px;
+    color: #0973b9;
+}
+
+    .title-link .title-child:hover {
+        cursor: pointer;
+    }
+
+    /**Navbar icon*/
+
+            .nb-icon-add {
+                background-position: 5px -2646px;
+            }
+
+            .nb-icon-duplicate {
+                height: 17px !important;
+                background-position: 4px -1887px;
+            }
+
+            .nb-icon-edit {
+                background-image: url('/content/images/edit16.png') !important;
+                background-position: 3px 3px;
+            }
+
+            .nb-icon-delete{
+                height: 18px !important;
+                background-position: 5px -2678px;
+            }
+
+            .nb-icon-import {
+                background-image: url('/content/images/import16.png') !important;
+                background-position: 3px 3px;
+            }
+
+            .nb-icon-include {
+                height: 18px !important;
+                background-position: 5px -2584px;
+                margin-top: 6px !important;
+            }
+
+            .nb-icon-export {
+                background-position: 4px -1823px;
+                height: 19px !important;
+            }
+
+            .nb-icon-group {
+                background-image: url('/content/images/ic_gopkhachhang.png') !important;
+                background-position: 1px 4px;
+            }
+
+            .nb-icon-help{
+                background-position: 5px -1599px;
+                height: 17px !important;
+                margin-top: 5px !important;
+            }
+
+
+
+/**kích thước các cột của bảng danh sách*/
+
+.colum_customer_id {
+    width: 7%;
+}
+
+.colum_customer_name {
+    width: 10%;
+}
+
+.colum_company {
+    width: 15%;
+}
+
+.colum_tax {
+    width: 6%;
+}
+
+.colum_address {
+    width: 15%;
+}
+
+.colum_birthday {
+    width: 8%;
+}
+
+.colum_is5Food {
+    width: 10%;
+}
+
+.colum_email {
+    width: 15%;
+}

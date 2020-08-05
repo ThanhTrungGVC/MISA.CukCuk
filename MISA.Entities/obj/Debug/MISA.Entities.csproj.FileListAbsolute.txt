@@ -1,0 +1,17 @@
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.Entities\bin\Debug\MISA.Entities.dll
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.Entities\bin\Debug\MISA.Entities.pdb
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.Entities\obj\Debug\MISA.Entities.csprojAssemblyReference.cache
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.Entities\obj\Debug\MISA.Entities.dll
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.Entities\obj\Debug\MISA.Entities.pdb
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.Entities\bin\Debug\MISA.Entities.dll
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.Entities\bin\Debug\MISA.Entities.pdb
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.Entities\obj\Debug\MISA.Entities.csprojAssemblyReference.cache
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.Entities\obj\Debug\MISA.Entities.csproj.CoreCompileInputs.cache
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.Entities\obj\Debug\MISA.Entities.dll
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.Entities\obj\Debug\MISA.Entities.pdb
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.Entities\bin\Debug\MISA.Entities.dll
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.Entities\bin\Debug\MISA.Entities.pdb
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.Entities\obj\Debug\MISA.Entities.csprojAssemblyReference.cache
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.Entities\obj\Debug\MISA.Entities.csproj.CoreCompileInputs.cache
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.Entities\obj\Debug\MISA.Entities.dll
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.Entities\obj\Debug\MISA.Entities.pdb

@@ -1,0 +1,227 @@
+﻿#popup {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255,255,255,0.5);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: flex;
+}
+
+
+    #popup .popup-container {
+        width: 700px;
+        height: 415px;
+        background-color: #0973b9;
+        margin: auto;
+    }
+
+    #popup .popup-header {
+        height: 30px;
+        width: 100%;
+        display: flex;
+    }
+
+.popup-header .popup-title {
+    color: #ffffff;
+    width: calc(100% - 40px);
+    height: 100%;
+    line-height: 30px;
+    padding-left: 10px;
+}
+
+#popup-close {
+    width: 30px;
+    height: 30px;
+    background-image: url('/content/images/cancel.png');
+    background-repeat: no-repeat;
+    background-position: 7px 10px;
+}
+
+    #popup-close:hover {
+        cursor: pointer;
+    }
+
+#popup .popup-content {
+    margin-left: 8px;
+    margin-top: 3px;
+    background-color: #ffffff;
+    width: calc(100% - 15px);
+    height: calc(100% - 47px);
+    padding-top: 7px;
+}
+
+.popup-content label {
+    width: 135px;
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.popup-content input {
+    margin-top: 5px;
+    padding-left: 5px;
+    width: 162px;
+    height: 20px;
+    border: 1px solid #808080;
+}
+
+.popup-content input[type='checkbox'] {
+    margin-left: 8px;
+}
+
+    .popup-content input:focus {
+        resize: initial;
+        outline: none !important;
+        border: 1px solid #0973b9;
+    }
+
+/*.popup-content select {
+    margin-top: 5px;
+    padding-left: 5px;
+    width: 160px;
+    height: 19px;
+}*/
+
+.popup-content textarea {
+    margin-top: 5px;
+    padding-left: 5px;
+    width: 162px;
+}
+
+.popup-content select {
+    margin-top: 5px;
+    padding-left: 5px;
+    padding-top: 3px;
+    height: 20px;
+    background-image: url('/content/images/iconsprite.png'), url('/content/images/form/trigger.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position: 151px -47px, 125px -2px;
+    width: 171px !important;
+    /*for firefox*/
+    -moz-appearance: none;
+    /*for chrome*/
+    -webkit-appearance: none;
+}
+
+.popup-content .error-message{
+    color: #ff0000;
+    width: 70%;
+    font-weight: bold;
+    margin-left: 146px;
+}
+
+    .popup-content select:hover {
+        cursor: pointer;
+    }
+
+
+.popup-content span {
+    color: #ff0000;
+}
+
+.popup-content .input-full {
+    width: 504px;
+}
+
+.popup-content .element-2 {
+    display: flex;
+    width: 100%;
+}
+
+.element-2 .col-left {
+    width: 50%;
+}
+
+.element-2 .col-right {
+    width: 50%;
+}
+
+.popup-content .button {
+    height: 40px;
+    width: 100%;
+    margin-top: 5px;
+    display: flex;
+    line-height: 30px;
+    min-width: 685px;
+}
+
+.button .help {
+    width: calc(50% - 10px);
+    height: 100%;
+    margin-left: 10px;
+    align-items: center;
+}
+
+.btn-help {
+    background-image: url('/content/images/iconsprite.png');
+    background-repeat: no-repeat;
+    padding-left: 28px;
+    padding-right: 15px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 12px;
+    background-position: 5px -1598px;
+    border: 1px solid #808080;
+}
+
+.button .directional {
+    width: calc(50% - 10px);
+    height: 100%;
+    display: flex;
+    margin-right: 10px;
+    align-items: center;
+}
+
+.btn-save {
+    margin-left: 20px;
+    background-image: url(/content/images/save16.png);
+    background-repeat: no-repeat;
+    background-position: 6px 2px;
+    font-size: 13px;
+    padding-left: 27px;
+    padding-right: 18px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border: 1px solid #808080;
+}
+
+.btn-saveAndAdd {
+    margin-left: 20px;
+    background-image: url(/content/images/saveAdd16.png);
+    background-repeat: no-repeat;
+    background-position: 6px 1px;
+    font-size: 13px;
+    padding-left: 27px;
+    padding-right: 6px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border: 1px solid #808080;
+}
+
+.btn-cancel {
+    margin-left: 20px;
+    background-image: url(/content/images/Disable16.png);
+    background-repeat: no-repeat;
+    background-position: 6px 2px;
+    font-size: 13px;
+    padding-left: 27px;
+    padding-right: 9px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border: 1px solid #808080;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    display: block;
+    background: url('/content/images/form/date-trigger.png') no-repeat;
+    border-width: thin;
+}
+
+.customerBirthday {
+    background: url(/content/images/form/date-trigger.png) no-repeat;
+    background-position: 147px 2px;
+    height: 24px !important;
+    width: 164px !important;
+}

@@ -1,0 +1,191 @@
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.BL\obj\Debug\MISA.BL.csprojAssemblyReference.cache
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\MISA.BL.dll.config
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\MISA.BL.dll
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\MISA.BL.pdb
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\MISA.Common.dll
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\MISA.DL.dll
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\MISA.Entities.dll
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Microsoft.EntityFrameworkCore.dll
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Pomelo.EntityFrameworkCore.MySql.dll
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Bcl.HashCode.dll
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\System.ComponentModel.Annotations.dll
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\System.Collections.Immutable.dll
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Extensions.Logging.dll
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Extensions.Options.dll
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\MySqlConnector.dll
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Pomelo.JsonObject.dll
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Extensions.Primitives.dll
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\System.Memory.dll
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\System.Buffers.dll
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Newtonsoft.Json.dll
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\System.Numerics.Vectors.dll
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\MISA.Common.pdb
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\MISA.DL.pdb
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\MISA.DL.dll.config
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\MISA.Entities.pdb
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Microsoft.EntityFrameworkCore.xml
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Microsoft.EntityFrameworkCore.Relational.xml
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Extensions.Caching.Abstractions.xml
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.xml
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Bcl.HashCode.xml
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\System.Collections.Immutable.xml
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Extensions.Logging.xml
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Extensions.Caching.Memory.xml
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Extensions.Options.xml
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\MySqlConnector.xml
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Extensions.Primitives.xml
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\System.Memory.xml
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\System.Buffers.xml
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Newtonsoft.Json.xml
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\System.Numerics.Vectors.xml
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.BL\obj\Debug\MISA.BL.csproj.CopyComplete
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.BL\obj\Debug\MISA.BL.dll
+D:\nttrung\MISA.Fresher082020\NTTRUNG\MISA.BL\obj\Debug\MISA.BL.pdb
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\MISA.BL.dll.config
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\MISA.BL.dll
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\MISA.BL.pdb
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\MISA.Common.dll
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\MISA.DL.dll
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\MISA.Entities.dll
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Microsoft.EntityFrameworkCore.dll
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Pomelo.EntityFrameworkCore.MySql.dll
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Bcl.HashCode.dll
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\System.ComponentModel.Annotations.dll
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\System.Collections.Immutable.dll
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Extensions.Logging.dll
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Extensions.Options.dll
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\MySqlConnector.dll
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Pomelo.JsonObject.dll
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Extensions.Primitives.dll
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\System.Memory.dll
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\System.Buffers.dll
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Newtonsoft.Json.dll
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\System.Numerics.Vectors.dll
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\MISA.Common.pdb
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\MISA.DL.pdb
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\MISA.DL.dll.config
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\MISA.Entities.pdb
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Microsoft.EntityFrameworkCore.xml
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Microsoft.EntityFrameworkCore.Relational.xml
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Extensions.Caching.Abstractions.xml
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.xml
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Bcl.HashCode.xml
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\System.Collections.Immutable.xml
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Extensions.Logging.xml
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Extensions.Caching.Memory.xml
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Extensions.Options.xml
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\MySqlConnector.xml
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Extensions.Primitives.xml
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\System.Memory.xml
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\System.Buffers.xml
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\Newtonsoft.Json.xml
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\bin\Debug\System.Numerics.Vectors.xml
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\obj\Debug\MISA.BL.csprojAssemblyReference.cache
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\obj\Debug\MISA.BL.csproj.CoreCompileInputs.cache
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\obj\Debug\MISA.BL.csproj.CopyComplete
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\obj\Debug\MISA.BL.dll
+D:\MISA Fresher\Learning\Source code\MISA.Fresher082020\NTTRUNG\MISA.BL\obj\Debug\MISA.BL.pdb
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\bin\Debug\MISA.BL.dll.config
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\bin\Debug\MISA.BL.dll
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\bin\Debug\MISA.BL.pdb
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\bin\Debug\MISA.Common.dll
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\bin\Debug\MISA.DL.dll
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\bin\Debug\MISA.Entities.dll
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\bin\Debug\Microsoft.EntityFrameworkCore.dll
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\bin\Debug\Pomelo.EntityFrameworkCore.MySql.dll
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Bcl.HashCode.dll
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\bin\Debug\System.ComponentModel.Annotations.dll
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\bin\Debug\System.Collections.Immutable.dll
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Extensions.Logging.dll
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Extensions.Options.dll
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\bin\Debug\MySqlConnector.dll
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\bin\Debug\Pomelo.JsonObject.dll
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Extensions.Primitives.dll
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\bin\Debug\System.Memory.dll
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\bin\Debug\System.Buffers.dll
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\bin\Debug\Newtonsoft.Json.dll
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\bin\Debug\System.Numerics.Vectors.dll
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\bin\Debug\MISA.Common.pdb
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\bin\Debug\MISA.DL.pdb
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\bin\Debug\MISA.DL.dll.config
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\bin\Debug\MISA.Entities.pdb
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\bin\Debug\Microsoft.EntityFrameworkCore.xml
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\bin\Debug\Microsoft.EntityFrameworkCore.Relational.xml
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Extensions.Caching.Abstractions.xml
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.xml
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Bcl.HashCode.xml
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\bin\Debug\System.Collections.Immutable.xml
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Extensions.Logging.xml
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Extensions.Caching.Memory.xml
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Extensions.Options.xml
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\bin\Debug\MySqlConnector.xml
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\bin\Debug\Microsoft.Extensions.Primitives.xml
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\bin\Debug\System.Memory.xml
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\bin\Debug\System.Buffers.xml
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\bin\Debug\Newtonsoft.Json.xml
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\bin\Debug\System.Numerics.Vectors.xml
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\obj\Debug\MISA.BL.csprojAssemblyReference.cache
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\obj\Debug\MISA.BL.csproj.CoreCompileInputs.cache
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\obj\Debug\MISA.BL.csproj.CopyComplete
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\obj\Debug\MISA.BL.dll
+D:\MISA Fresher\Learning\Source code\C#\NTTRUNG\MISA.BL\obj\Debug\MISA.BL.pdb

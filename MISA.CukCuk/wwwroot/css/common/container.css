@@ -1,0 +1,114 @@
+﻿.container{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 59px);
+    min-height: 700px;
+}
+
+/*menu*/
+.container .menu {
+    width: 230px;
+    height: 100%;
+    background-color: #0973b9 !important;
+}
+
+    .menu .menu-item {
+        width: calc(100% - 10px);
+        height: 40px;
+        padding-left: 10px;
+        border-top: 1px solid #178ad6;
+        border-bottom: 1px solid #03578e;
+        display: flex;
+    }
+
+    .menu-item:hover {
+        background-color: #eb7728;
+        cursor: pointer;
+    }
+
+    .menu-item .menu-icon {
+        width: 40px;
+        height: 100%;
+        background-image: url('/content/images/iconmenu.png');
+        background-repeat: no-repeat;
+    }
+
+        .icon-dashboard {
+            background-position: 6px 7px;
+        }
+
+        .icon-report{
+            background-position: 6px -184px;
+        }
+
+        .icon-order {
+            background-position: 6px -366px;
+        }
+
+        .icon-stock{
+            background-position: 6px -31px;
+        }
+
+        .icon-cash {
+            background-position: 6px -71px;
+        }
+
+        .icon-bank {
+            background-image: url('/content/images/icon-deposit.png') !important;
+            background-position: 10px 9px;
+        }
+
+        .icon-cost {
+            background-image: url('/content/images/icon-cost.png') !important;
+            background-position: 7px 7px;
+        }
+
+        .icon-sale {
+            background-position: 6px -109px;
+        }
+
+        .icon-menu {
+            background-image: url('/content/images/vector-smart-object.png') !important;
+            background-position: 11px 8px;
+        }
+
+        .icon-category{
+            background-position: 6px -148px;
+        }
+
+        .icon-deleteOrder {
+            background-image: url('/content/images/cancel-invoice.png') !important;
+            background-position: 9px 9px;
+        }
+
+        .icon-setting {
+            background-position: 6px -225px;
+        }
+
+        .icon-help {
+            background-image: url('/content/images/iconhelp.png') !important;
+            background-position: 8px 9px;
+        }
+
+        .icon-phone {
+            background-image: url('/content/images/icon-subscriber.png') !important;
+            background-position: 9px 10px;
+        }
+
+        .icon-application {
+            background-position: 6px -148px;
+        }
+
+        .icon-5food {
+            background-image: url('/content/images/5food.png') !important;
+            background-position: 8px 9px;
+        }
+
+    .menu-item .menu-item-content{
+        width: calc(100% - 50px);
+        height: 100%;
+        margin-left: 4px;
+        color: #ffffff;
+        line-height: 40px;
+    }

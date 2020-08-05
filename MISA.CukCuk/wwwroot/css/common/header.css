@@ -1,0 +1,153 @@
+﻿/*header*/
+.header{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 55px;
+    min-width: 1024px;
+    background-color: #0973b9 !important;
+}
+
+/*heder-left: logo + lựa chọn nhà hàng*/
+.header .header-left{
+    position:relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    display: flex;
+}
+
+    .header .header-logo {
+        width: 212px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding-left: 18px;
+    }
+
+        .header .header-logo .icon-left-heder {
+            width: 20px;
+            height: 20px;
+            background-image: url('/content/images/icon-left-header.png');
+        }
+
+        .header .header-logo .logo {
+            width: 120px;
+            height: 22px;
+            background-repeat: no-repeat;
+            background-image: url(/content/images/logo-text.png);
+            background-position: 0px center;
+            margin-left: 13px;
+        }
+
+    .header .dropdown-restaurant{
+        width: 200px;
+        height: 100%;
+        line-height: 55px;
+        margin-left: 15px;
+
+    }
+
+    .header select{
+        height: 30px;
+        width: 200px;
+        background-color: #005082 !important;
+        color: #ffffff;
+        border: none;
+        padding-left: 4px;
+    }
+
+/*header-rigth::after lựa chọn ngôn ngữ + thông báo + news + tài khoản*/
+.header .header-right {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+    .header .dropdown-language {
+        width: 200px;
+        height: 100%;
+        line-height: 55px;
+    }
+
+    .header .notification{
+        height: 25px;
+        width: 25px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+        .notification:hover{
+            cursor: pointer;
+        }
+
+        .notification .notification-icon {
+            width: 100%;
+            height: 100%;
+            background-image: url('/content/images/globe.png');
+        }
+
+        .notification .notification-number{
+            width: 18px;
+            height: 18px;
+            margin-top: -28px;
+            margin-left: 15px;
+            text-align: center;
+            align-items: center;
+            color: #ffffff;
+            background-color: #ff0000;
+        }
+
+    .header .question {
+        width: 136px;
+        height: 100%;
+        background-image: url('/content/images/question.png');
+        background-repeat: no-repeat;
+    }
+
+    .header .news {
+        width: 70px;
+        height: 100%;
+        margin-left: 5px;
+        margin-right: 10px;
+        background-image: url('/content/images/news.png');
+        background-repeat: no-repeat;
+    }
+
+    .header .account{
+        position:relative;
+        width: 300px;
+        margin-left: 20px;
+        align-items: center;
+        display: flex;
+    }
+
+        .account .account-icon {
+            width: 30px;
+            height: 30px;
+            background-color: #ffffff;
+            border-radius: 50%;
+            background-image: url('/content/images/employeeimage.png');
+            background-repeat: no-repeat;
+            background-position: 3px 2px;
+        }
+
+        .account .account-name{
+            width: 150px;
+            margin: 5px;
+            color: #ffffff;
+        }
+
+        .account .account-icon-dropdown {
+            margin-left: 10px;
+            width: 15px;
+            height: 15px;
+            background-image: url('/content/images/trigger.png');
+            background-repeat: no-repeat;
+            background-position: 0px;
+        }
+
+
+    
