@@ -343,8 +343,8 @@
     <Compile Include="Base\BaseDL1.cs" />
     <Compile Include="Base\BaseDL2.cs" />
     <Compile Include="Base\IBaseDL.cs" />
-    <Compile Include="DataContext\DataContext.cs" />
-    <Compile Include="DataContext\IDataContext.cs" />
+    <Compile Include="DatabaseContext\DatabaseContext.cs" />
+    <Compile Include="DatabaseContext\IDatabaseContext.cs" />
     <Compile Include="Dictionary\CustomerDL.cs" />
     <Compile Include="Interface\ICustomerDL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

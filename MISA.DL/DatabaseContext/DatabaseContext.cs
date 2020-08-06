@@ -3,13 +3,13 @@ using MISA.Entities;
 
 namespace MISA.DL
 {
-    public partial class DataContext: DbContext
+    public partial class DatabaseContext: DbContext
     {
-        public DataContext()
+        public DatabaseContext()
         {
         }
 
-        public DataContext(DbContextOptions<DataContext> options)
+        public DatabaseContext(DbContextOptions<DatabaseContext> options)
             : base(options)
         {
         }

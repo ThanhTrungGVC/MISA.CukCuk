@@ -49,5 +49,6 @@ namespace MISA.DL.Base
         /// <param name="entityID"></param>
         /// <returns></returns>
         bool EntityExists(Guid entityID);
+
     }
 }

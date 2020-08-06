@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DmIbOvAiLSO+XSkU5F6cJVag0lh69a9Fox+Y/B9FQ8fhKW/pnNgDqI5vv59RF5ao7tvIc3EP5/AmypnqLzN4ZQ==",
+  "dgSpecHash": "e6oLz3c3tR4HSAB9pl8uJLOi69Q2Uhy5PTJaUpz3d0irpLc7fQMPIVJwf3P66+LNp9gble40/CABGef17sjfjg==",
   "success": true,
-  "projectFilePath": "D:\\MISA Fresher\\Learning\\Source code\\C#\\NTTRUNG\\MISA.CukCuk\\MISA.CukCuk.csproj",
+  "projectFilePath": "D:\\MISA Fresher\\Learning\\Source code\\C#\\MISA.CukCuk\\MISA.CukCuk\\MISA.CukCuk.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\thanh\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\thanh\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.1.6\\microsoft.aspnetcore.jsonpatch.3.1.6.nupkg.sha512",

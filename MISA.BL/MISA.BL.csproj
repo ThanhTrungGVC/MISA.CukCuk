@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Base\BaseBL1.cs" />
+    <Compile Include="Base\BaseBL2.cs" />
     <Compile Include="Base\IBaseBL.cs" />
     <Compile Include="Dictionary\CustomerBL.cs" />
     <Compile Include="Interface\ICustomerBL.cs" />

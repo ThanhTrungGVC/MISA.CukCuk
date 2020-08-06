@@ -30,7 +30,7 @@ namespace MISA.CukCuk
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<DataContext>(options => options
+            services.AddDbContext<DatabaseContext>(options => options
                .UseMySql("Server=35.194.166.58;port=3306;Database=MISA.NTTRUNG.CukCuk;User=nvmanh;Password=12345678@Abc;",
                    mysqlOptions =>
                        mysqlOptions.ServerVersion(new ServerVersion(new Version(10, 4, 6), ServerType.MariaDb))));
@@ -45,8 +45,8 @@ namespace MISA.CukCuk
             // Register the Swagger generator, defining 1 or more Swagger documents
             services.AddSwaggerGen();
             services.AddScoped(typeof(IBaseDL<>), typeof(BaseDL2<>));
-            services.AddScoped(typeof(IBaseBL<>), typeof(BaseBL1<>));
-            services.AddScoped(typeof(IBaseController<>), typeof(BaseController1<>));
+            services.AddScoped(typeof(IBaseBL<>), typeof(BaseBL2<>));
+            services.AddScoped(typeof(IBaseController<>), typeof(BaseController2<>));
             services.AddScoped<ICustomerBL, CustomerBL>();
             services.AddScoped<ICustomerDL, CustomerDL>();
         }

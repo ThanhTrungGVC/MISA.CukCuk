@@ -9026,11 +9026,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\MISA Fresher\\Learning\\Source code\\C#\\NTTRUNG\\MISA.CukCuk\\MISA.CukCuk.csproj",
+      "projectUniqueName": "D:\\MISA Fresher\\Learning\\Source code\\C#\\MISA.CukCuk\\MISA.CukCuk\\MISA.CukCuk.csproj",
       "projectName": "MISA.CukCuk",
-      "projectPath": "D:\\MISA Fresher\\Learning\\Source code\\C#\\NTTRUNG\\MISA.CukCuk\\MISA.CukCuk.csproj",
+      "projectPath": "D:\\MISA Fresher\\Learning\\Source code\\C#\\MISA.CukCuk\\MISA.CukCuk\\MISA.CukCuk.csproj",
       "packagesPath": "C:\\Users\\thanh\\.nuget\\packages\\",
-      "outputPath": "D:\\MISA Fresher\\Learning\\Source code\\C#\\NTTRUNG\\MISA.CukCuk\\obj\\",
+      "outputPath": "D:\\MISA Fresher\\Learning\\Source code\\C#\\MISA.CukCuk\\MISA.CukCuk\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\thanh\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -9046,14 +9046,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\MISA Fresher\\Learning\\Source code\\C#\\NTTRUNG\\MISA.BL\\MISA.BL.csproj": {
-              "projectPath": "D:\\MISA Fresher\\Learning\\Source code\\C#\\NTTRUNG\\MISA.BL\\MISA.BL.csproj"
+            "D:\\MISA Fresher\\Learning\\Source code\\C#\\MISA.CukCuk\\MISA.BL\\MISA.BL.csproj": {
+              "projectPath": "D:\\MISA Fresher\\Learning\\Source code\\C#\\MISA.CukCuk\\MISA.BL\\MISA.BL.csproj"
             },
-            "D:\\MISA Fresher\\Learning\\Source code\\C#\\NTTRUNG\\MISA.Common\\MISA.Common.csproj": {
-              "projectPath": "D:\\MISA Fresher\\Learning\\Source code\\C#\\NTTRUNG\\MISA.Common\\MISA.Common.csproj"
+            "D:\\MISA Fresher\\Learning\\Source code\\C#\\MISA.CukCuk\\MISA.Common\\MISA.Common.csproj": {
+              "projectPath": "D:\\MISA Fresher\\Learning\\Source code\\C#\\MISA.CukCuk\\MISA.Common\\MISA.Common.csproj"
             },
-            "D:\\MISA Fresher\\Learning\\Source code\\C#\\NTTRUNG\\MISA.Entities\\MISA.Entities.csproj": {
-              "projectPath": "D:\\MISA Fresher\\Learning\\Source code\\C#\\NTTRUNG\\MISA.Entities\\MISA.Entities.csproj"
+            "D:\\MISA Fresher\\Learning\\Source code\\C#\\MISA.CukCuk\\MISA.Entities\\MISA.Entities.csproj": {
+              "projectPath": "D:\\MISA Fresher\\Learning\\Source code\\C#\\MISA.CukCuk\\MISA.Entities\\MISA.Entities.csproj"
             }
           }
         }

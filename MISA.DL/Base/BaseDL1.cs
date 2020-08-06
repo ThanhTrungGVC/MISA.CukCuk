@@ -10,14 +10,14 @@ namespace MISA.DL.Base
 {
     public class BaseDL1<T>: IBaseDL<T> where T: class
     {
-        protected readonly DataContext _context;
+        protected readonly DatabaseContext _context;
 
         /// <summary>
         /// contructor
         /// </summary>
         public BaseDL1()
         {
-            _context = new DataContext();
+            _context = new DatabaseContext();
         }
 
         /// <summary>

@@ -14,6 +14,8 @@ namespace MISA.CukCuk.Controllers
         /// lấy tất cả danh sách entities
         /// </summary>
         /// <returns></returns>
+        [Route("api/[controller]")]
+        [Produces("application/json")]
         [HttpGet]
         public AjaxResult GetAllEntities();
 
