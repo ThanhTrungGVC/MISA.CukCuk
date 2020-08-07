@@ -44,8 +44,13 @@
     <Compile Include="Base\BaseBL1.cs" />
     <Compile Include="Base\BaseBL2.cs" />
     <Compile Include="Base\IBaseBL.cs" />
-    <Compile Include="Dictionary\CustomerBL.cs" />
+    <Compile Include="Dictionary\CustomerBL1.cs" />
+    <Compile Include="Dictionary\CustomerBL2.cs" />
+    <Compile Include="Dictionary\EmployeeBL.cs" />
+    <Compile Include="Dictionary\PositionBL.cs" />
     <Compile Include="Interface\ICustomerBL.cs" />
+    <Compile Include="Interface\IEmployeeBL.cs" />
+    <Compile Include="Interface\IPositionBL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

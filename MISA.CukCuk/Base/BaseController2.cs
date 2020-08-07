@@ -62,7 +62,7 @@ namespace MISA.CukCuk.Controllers
             {
                 ajaxResult.Data = _baseBL.GetEntityByID(entityID);
                 ajaxResult.Success = true;
-                ajaxResult.Messanger = Properties.Resources.VN_SuccessLoad;
+                ajaxResult.Messanger = "controller 2";
             }
             catch (Exception)
             {
@@ -88,7 +88,7 @@ namespace MISA.CukCuk.Controllers
             {
                 ajaxResult.Data = _baseBL.EditEntity(entityID, entity);
                 ajaxResult.Success = true;
-                ajaxResult.Messanger = Properties.Resources.VN_SuccessUpdate;
+                ajaxResult.Messanger = "controller 2";
             }
             catch (Exception)
             {
@@ -113,7 +113,7 @@ namespace MISA.CukCuk.Controllers
             {
                 ajaxResult.Data = _baseBL.AddEntity(entity);
                 ajaxResult.Success = true;
-                ajaxResult.Messanger = Properties.Resources.VN_SuccessInsert;
+                ajaxResult.Messanger = "controller 2";
             }
             catch (Exception)
             {
@@ -138,7 +138,7 @@ namespace MISA.CukCuk.Controllers
             {
                 ajaxResult.Data = _baseBL.DelEntity(entityID);
                 ajaxResult.Success = true;
-                ajaxResult.Messanger = Properties.Resources.VN_SuccessDel;
+                ajaxResult.Messanger = "controller 2";
             }
             catch (Exception)
             {

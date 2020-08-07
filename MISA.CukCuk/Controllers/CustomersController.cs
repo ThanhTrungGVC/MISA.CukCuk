@@ -11,7 +11,7 @@ namespace MISA.CukCuk.Controllers
     /// <summary>
     /// khách hàng
     /// </summary>
-    public class CustomersController : BaseController1<Customer>, IBaseController<Customer>
+    public class CustomersController : BaseController1<Customer>
     {
         private readonly ICustomerBL _customerBL;
 
@@ -26,7 +26,7 @@ namespace MISA.CukCuk.Controllers
         /// </summary>
         /// <returns></returns>
         /// api/Customer/search
-        [HttpPut("search")]
+        [HttpPost("search")]
         public virtual AjaxResult SearchCustomer([FromBody] Customer inputCustomer)
         {
             var ajaxResult = new AjaxResult();

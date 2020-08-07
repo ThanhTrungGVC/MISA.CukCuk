@@ -75,6 +75,7 @@ class CustomerJS {
         }
     }
 
+//-------------------- Start: CÁC HÀM ĐÓNG MỞ DIALOG -------------------//
     /**
      * Hiển thị dialog
      * CreatedBy: NTT (22/07/2020)
@@ -113,52 +114,20 @@ class CustomerJS {
             this.hideDialog();
         }
     }
+//-------------------- End: CÁC HÀM ĐÓNG MỞ DIALOG -------------------//
 
+
+//-------------------- Start: CÁC HÀM XỬ LÝ KHI LỰA CHỌN MỘT BẢN GHI -------------------------//
     /**
-     * tìm kiếm khách hàng theo chuỗi nhập vào
-     * CreatedBy: NTT (04/08/2020)
-     * */
-    searchCustomer(e) {
-        if (e.which == 13) {
-            //lấy dữ liệu từ form
-            var customer = {
-                CustomerCode: $("#searchCusCode").val(),
-                FullName: $("#searchCusName").val(),
-                CompanyName: $("#searchCusCompany").val(),
-                TaxCode: $("#searchTaxCode").val(),
-                Address: $("#searchCusAddress").val(),
-                Birthday: $("#searchCusBirthday").val(),
-                Email: $("#searchEmail").val(),
-            }
+    * Lấy vị trí hàng được chọn, gán vào indexRowSelected
+    * Hàng được lựa chọn sẽ đổi màu
+    * CreatedBy: NTT (23/07/2020)
+    * */
+    RowSelect() {
+        commonJS.rowSelect(this);
 
-            debugger;
-            var customers_search = $.ajax({
-                method: 'PUT',
-                url: "/api/Customers/search",
-                async: false,
-                dataType: 'json',
-                data: JSON.stringify(customer),
-                contentType: "application/json",
-                success: function (results) {
-                    debugger;
-                    console.log(results.Messanger);
-                    //JSON.parse(results);
-                    //return results;
-                },
-                fail: function (results) {
-                    debugger;
-                    console.log(results.Messanger);
-                }
-            }).responseJSON;
-            debugger
-
-            //truyền ra biến
-            allCustomer = customers_search.Data;
-
-            this.loadData();
-        }
-         
-    }
+        indexRowSelected = $(this).index();
+    };
 
     /**
      * Lấy dữ liệu khách hàng khi chọn
@@ -194,29 +163,36 @@ class CustomerJS {
 
         }
     }
+//-------------------- End: CÁC HÀM XỬ LÝ KHI LỰA CHỌN MỘT BẢN GHI -------------------------//
+    
 
-    /**hàm xử lý khi số lượng hàng trên 1 trang thay đổi
-     * CreatedBy: NTT (28/07/2020)
-     * */
-    changeNumRow() {
-        // chuyển về trang 1
-        $("#page-number").val(1);
-
-        // set lại dữ liệu cho trang
-        this.loadData();
-    }
-
+//-------------------- Start: CÁC HÀM LẤY - THÊM - SỬA - XOÁ - NHÂN BẢN - TÌM KIẾM KHÁCH HÀNG --------------------//
     /**
-    * Lấy vị trí hàng được chọn, gán vào indexRowSelected
-    * Hàng được lựa chọn sẽ đổi màu
-    * CreatedBy: NTT (23/07/2020)
-    * */
-    RowSelect() {
-        this.classList.add("row-selected");
-        $(this).siblings().removeClass("row-selected");
-
-        indexRowSelected = $(this).index();
-    };
+     * lấy thông tin toàn bộ khách hàng trên scdl
+     * CreatedBy: NTT (29/07/2020
+     * */
+    getAllCustomer() {
+        debugger;
+        var customer = $.ajax({
+            method: 'GET',
+            url: "/api/Customers",
+            async: false,
+            dataType: 'json',
+            data: {},
+            contentType: "application/json",
+            success: function (results) {
+                debugger;
+                //JSON.parse(results);
+                //return results;
+            },
+            fail: function (jqXHR, textStatus, errorThrown) {
+                debugger;
+                console.log('Could not get posts, server response: ' + textStatus + ': ' + errorThrown);
+            }
+        }).responseJSON;
+        debugger
+        return customer.Data;
+    }
 
     /**
      * hàm thêm dữ liệu khách hàng
@@ -227,6 +203,52 @@ class CustomerJS {
         status = "add";
 
         this.showDialog();
+    }
+
+    /**
+     * Hàm sử thông tin khách hàng được lựa chọn
+     * CreatedBy: NTT (24/07/2020)
+     * */
+    editCustomer() {
+        // đặt trạng thái
+        status = "edit";
+
+        // lấy thông tin khách hàng được lựa chọn
+        var customer = this.getValueRow();
+
+        if (customer) {
+            // mở dialog khách hàng
+            this.showDialog();
+
+            // in thông tin khách hàng lên dialog
+            this.bindDataDialog(customer);
+            debugger
+        }
+    }
+
+    /**
+     * hàm nhân bản khách hàng
+     * CreatedBy: NTT (28/07/2020)
+     * */
+    duplicateCustumer() {
+        // đặt trạng thái
+        status = "duplicate";
+
+        // lấy thông tin khách hàng được lựa chọn
+        var customer = this.getValueRow();
+
+        if (customer) {
+            // mở dialog khách hàng
+            this.showDialog();
+
+            // in thông tin khách hàng lên dialog
+            this.bindDataDialog(customer);
+
+            // xoá mã khách hàng cũ
+            $("#txtCustomerCode").val("");
+
+            debugger
+        }
     }
 
     /**
@@ -273,6 +295,54 @@ class CustomerJS {
     }
 
     /**
+     * tìm kiếm khách hàng theo chuỗi nhập vào
+     * CreatedBy: NTT (04/08/2020)
+     * */
+    searchCustomer(e) {
+        if (e.which == 13) {
+            //lấy dữ liệu từ form
+            var customer = {
+                CustomerCode: $("#searchCusCode").val(),
+                FullName: $("#searchCusName").val(),
+                CompanyName: $("#searchCusCompany").val(),
+                TaxCode: $("#searchTaxCode").val(),
+                Address: $("#searchCusAddress").val(),
+                Birthday: $("#searchCusBirthday").val(),
+                Email: $("#searchEmail").val(),
+            }
+
+            debugger;
+            var customers_search = $.ajax({
+                method: 'POST',
+                url: "/api/Customers/search",
+                async: false,
+                dataType: 'json',
+                data: JSON.stringify(customer),
+                contentType: "application/json",
+                success: function (results) {
+                    debugger;
+                    console.log(results.Messanger);
+                    //JSON.parse(results);
+                    //return results;
+                },
+                fail: function (results) {
+                    debugger;
+                    console.log(results.Messanger);
+                }
+            }).responseJSON;
+            debugger
+
+            //truyền ra biến
+            allCustomer = customers_search.Data;
+
+            this.loadData();
+        }
+    }
+//-------------------- End: CÁC HÀM LẤY - THÊM - SỬA - XOÁ - NHÂN BẢN - TÌM KIẾM KHÁCH HÀNG --------------------//
+
+
+//-------------------- Start: CÁC HÀM XỬ LÝ TRÊN DIALOG (check dữ liệu, lấy dữ liệu, in dữ liệu) --------------------//
+    /**
      * hàm kiểm tra dialog có dữ liệu
      * CreatedBy: NTT (01/08/2020)
      * */
@@ -280,8 +350,7 @@ class CustomerJS {
         // in dữ liệu của khách hàng lên dialog
         if ($("#txtCustomerCode").val() || $("#txtCustomerName").val() || $("#txtMemberCode").val() || $("#txtCustomerPhone").val()
             || $("#dtCustomerBirthday").val() || $("#txtCustomerCompany").val() || $("#txtCustomerTaxCode").val()
-            || $("#txtCustomerEmail").val() || $("#txtCustomerAddress").val() || $("#note").val())
-        { return true };
+            || $("#txtCustomerEmail").val() || $("#txtCustomerAddress").val() || $("#note").val()) { return true };
 
         return false;
     }
@@ -308,140 +377,59 @@ class CustomerJS {
         $("#note").val(customer.Note);
     }
 
-    /**
-     * Hàm sử thông tin khách hàng được lựa chọn
-     * CreatedBy: NTT (24/07/2020)
-     * */
-    editCustomer() {
-        // đặt trạng thái
-        status = "edit";
-
-        // lấy thông tin khách hàng được lựa chọn
-        var customer = this.getValueRow();
-        
-        if (customer) {
-            // mở dialog khách hàng
-            this.showDialog();
-
-            // in thông tin khách hàng lên dialog
-            this.bindDataDialog(customer);
-            debugger
-        }
-    }
-
-    /**
-     * hàm nhân bản khách hàng
+    /**lấy dữ liệu từ form khách hàng   
      * CreatedBy: NTT (28/07/2020)
      * */
-    duplicateCustumer() {
-        // đặt trạng thái
-        status = "duplicate";
+    getValueInDialog() {
+        // lấy dữ liệu từ dialog
+        var inputInfoCustomer = {
+            customerID: "",
+            customerCode: $("#txtCustomerCode").val(),
+            fullName: $("#txtCustomerName").val(),
+            memberCode: $("#txtMemberCode").val(),
+            customerPhone: $("#txtCustomerPhone").val(),
+            customerBirthday: $("#dtCustomerBirthday").val() || null,
+            customerConpany: $("#txtCustomerCompany").val(),
+            customerTaxCode: $("#txtCustomerTaxCode").val(),
+            customerEmail: $("#txtCustomerEmail").val(),
+            customerAddress: $("#txtCustomerAddress").val(),
+            is5FoodMember: $("#cbIs5foodmember").prop("checked"),
+            note: $("#note").val().trim(),
+            gerder: 2,
+            debitAmount: 0
+        };
 
-        // lấy thông tin khách hàng được lựa chọn
-        var customer = this.getValueRow();
-
-        if (customer) {
-            // mở dialog khách hàng
-            this.showDialog();
-
-            // in thông tin khách hàng lên dialog
-            this.bindDataDialog(customer);
-
-            // xoá mã khách hàng cũ
-            $("#txtCustomerCode").val("");
-
-            debugger
-        }
+        return inputInfoCustomer;
     }
+//-------------------- End: CÁC HÀM XỬ LÝ TRÊN DIALOG (check dữ liệu, lấy dữ liệu, in dữ liệu) --------------------//
+   
 
-    /**hàm lấy độ dài (số lượng hàng) của bảng khách hàng
-     * CreatedBy: NTT (28/07/2020)
-     * */
-    getTotalRow() {
-        return allCustomer.length;
-    }
-
-
-    /**
-     * Hàm lấy số lượng hàng trên 1 trang
-     * CreatedBy: NTT (28/07/2020)
-     * */
-    getNumRowInOnePage() {
-        var numRow = $("#select-num-row").val();
-        return numRow;
-    }
-
-    /**
-     * hàm lấy số tổng số trang
-     * CreatedBy: NTT (28/07/2020)
-     * */
-    getTotalPage() {
-        var totalRow = this.getTotalRow();
-        var numRowInOnePage = this.getNumRowInOnePage();
-
-        var totalPage;
-        if (Math.floor(totalRow % numRowInOnePage) == 0) {
-            totalPage = Math.floor(totalRow / numRowInOnePage);
-        } else {
-            totalPage = (Math.floor(totalRow / numRowInOnePage) + 1);
-        }
-        // giới hạn cho input chọn trang
-        $("#page-number").attr("max", totalPage);
-
-        return totalPage;
-    }
-
-    /**
-     * hàm lấy trang hiện tại đang hiển thị
-     * CreatedBy: NTT (28/07/2020)
-     * */
-    getNumPage() {
-        var page = $("#page-number").val();
-        return page;
-    }
-
-    /**
-     * hàm tính toán giá trị vị trí hàng đầu tiên
-     * CreatedBy: NTT (28/07/2020)
-     * */
-    getIndexStartRow() {
-        return ((this.getNumPage() - 1) * this.getNumRowInOnePage() + 1);
-    }
-
-    /**
-     * hàm tính toán vị trí kết thúc của hàng trong trang
-     * CreatedBy: NTT (28/07/2020)
-     * */
-    getIndexEndRow() {
-        var numRow = this.getNumRowInOnePage();
-        var numPage = this.getNumPage();
-        var totalRow = this.getTotalRow();
-
-        if (numRow * numPage >= totalRow) {
-            return totalRow;
-        } else {
-            return (numRow * numPage);
-        }
-    }
-
+//-------------------- Start: CÁC HÀM ĐIỀU HƯỚNG, PHÂN TRANG ----------------------//
     /**
      * Hàm lấy thông tin phân trang và in lên html
      * CreatedBy: NTT (28/07/2020)
      * */
     setValue() {
-        var totalRow = this.getTotalRow();
-        var totalPage = this.getTotalPage();
-        var indexRowStart = this.getIndexStartRow();
-        var indexRowEnd = this.getIndexEndRow();
+        var totalRow = allCustomer.length;
+        var totalPage = commonJS.getTotalPage(allCustomer);
+        var indexRowStart = commonJS.getIndexStartRow();
+        var indexRowEnd = commonJS.getIndexEndRow(allCustomer);
         debugger;
-        
+
 
         $("#number-row-total").html(totalRow);
         $("#number-row-start").html(indexRowStart);
         $("#number-row-end").html(indexRowEnd);
         $("#total-page").html("trên " + totalPage);
+    }
 
-        //this.loadData();
+    /**
+     * hàm xử lý khi số lượng hàng trên 1 trang thay đổi, chuyển về trang 1
+     * CreatedBy: NTT (28/07/2020)
+     * */
+    changeNumRow() {
+        // chuyển về trang 1
+        commonJS.setPageFirst(this);
     }
 
     /**
@@ -449,8 +437,7 @@ class CustomerJS {
      * CreatedBy: NTT (28/07/2020)
      * */
     changeFirstPage() {
-        $("#page-number").val(1);
-        this.loadData();
+        commonJS.setPageFirst(this);
     }
 
     /**
@@ -458,12 +445,7 @@ class CustomerJS {
      * CreatedBy: NTT (28/07/2020)
      * */
     changePrePage() {
-        var page = this.getNumPage();
-        if (page > 1) {
-            var prePage = parseInt(page) - 1;
-            $("#page-number").val(prePage);
-            this.loadData();
-        }
+        commonJS.changePrePage(this);
     }
 
     /**
@@ -471,25 +453,19 @@ class CustomerJS {
      * CreatedBy: NTT (28/07/2020)
      * */
     changeNextPage() {
-        var page = this.getNumPage();
-        var endPage = this.getTotalPage();
-
-        if (page < endPage) {
-            var nextpage = parseInt(page) + 1;
-            $("#page-number").val(nextpage);
-            this.loadData();
-        }
+        commonJS.changeNextPage(this, allCustomer);
     }
 
     /**
      * chuyển đến trang cuối cùng
      * CreatedBy: NTT (28/07/2020)*/
     changeEndPage() {
-        var endPage = this.getTotalPage();
-        $("#page-number").val(endPage);
-        this.loadData();
+        commonJS.changeEndPage(this, allCustomer);
     }
+//-------------------- End: CÁC HÀM ĐIỀU HƯỚNG, PHÂN TRANG ----------------------//
 
+
+//-------------------- Validate dữ liệu, load data -------------------//
     /**
      * Kiểm tra dữ liệu nhập vào
      * @param {Object(customer)} inputInfoCustomer
@@ -536,33 +512,6 @@ class CustomerJS {
     }
 
     /**
-     * lấy thông tin toàn bộ khách hàng trên scdl
-     * CreatedBy: NTT (29/07/2020
-     * */
-    getAllCustomer() {
-        debugger;
-        var customer = $.ajax({
-            method: 'GET',
-            url: "/api/Customers",
-            async: false,
-            dataType: 'json',
-            data: {},
-            contentType: "application/json",
-            success: function (results) {
-                debugger;
-                //JSON.parse(results);
-                //return results;
-            },
-            fail: function (jqXHR, textStatus, errorThrown) {
-                debugger;
-                console.log('Could not get posts, server response: ' + textStatus + ': ' + errorThrown);
-            }
-        }).responseJSON;
-        debugger
-        return customer.Data;
-    }
-
-    /**
      * Load thông tin dữ liệu ra bảng
      * CreatedBy: NTTRUNG (22/07/2020)
      * */
@@ -573,8 +522,8 @@ class CustomerJS {
             indexRowSelected = -1;
 
             // lấy vị trí các hàng cần in dữ liệu
-            var indexRowStart = this.getIndexStartRow() - 1;
-            var indexRowEnd = this.getIndexEndRow() - 1;
+            var indexRowStart = commonJS.getIndexStartRow() - 1;
+            var indexRowEnd = commonJS.getIndexEndRow(allCustomer) - 1;
 
             for (var i = indexRowStart; i <= indexRowEnd; i++) {
                 debugger
@@ -590,41 +539,18 @@ class CustomerJS {
                                 <td>`+ item['Email'] + `</td>
                             </tr>`);
                 customerInfoHTML.data("id", item["CustomerID"]);
-                
+
                 $('table#tbListCustomer tbody').append(customerInfoHTML);
             }
 
             this.setValue();
-        } catch(e){
+        } catch (e) {
             //console.log(e);
         }
     }
+//-------------------- Validate dữ liệu, load data -------------------//
 
-    /**lấy dữ liệu từ form khách hàng   
-     * CreatedBy: NTT (28/07/2020)
-     * */
-    getValueInDialog() {
-        // lấy dữ liệu từ dialog
-        var inputInfoCustomer = {
-            customerID: "",
-            customerCode: $("#txtCustomerCode").val(),
-            fullName: $("#txtCustomerName").val(),
-            memberCode: $("#txtMemberCode").val(),
-            customerPhone: $("#txtCustomerPhone").val(),
-            customerBirthday: $("#dtCustomerBirthday").val() || null,
-            customerConpany: $("#txtCustomerCompany").val(),
-            customerTaxCode: $("#txtCustomerTaxCode").val(),
-            customerEmail: $("#txtCustomerEmail").val(),
-            customerAddress: $("#txtCustomerAddress").val(),
-            is5FoodMember: $("#cbIs5foodmember").prop("checked"),
-            note: $("#note").val().trim(),
-            gerder: 2,
-            debitAmount: 0
-        };
-
-        return inputInfoCustomer;
-    }
-
+//-------------------- Start: CÁC HÀM XỬ LÝ LƯU DỮ LIỆU ------------------//
     /**
      * Lưu lại thông tin khách hàng
      * CreatedBy: NTTRUNG (22/07/2020)
@@ -713,7 +639,7 @@ class CustomerJS {
                 debugger;
             })
 
-            
+
         }
 
         if (status == "edit") {
@@ -763,7 +689,7 @@ class CustomerJS {
 
                 //$('table#tbListCustomer tbody').append(customerInfoHTML);
 
-                
+
                 debugger;
             }).fail(function (res) {
                 alert(res.Messanger);
@@ -775,6 +701,7 @@ class CustomerJS {
         // đặt lại trạng thái
         status = "none";
     }
+//-------------------- End: CÁC HÀM XỬ LÝ LƯU DỮ LIỆU -------------------//
 }
 
 var allCustomer;    // biến lưu lại dữ liệu khách hàng gọi về từ service

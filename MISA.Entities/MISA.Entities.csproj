@@ -44,6 +44,8 @@
     <Compile Include="Base\Entity.cs" />
     <Compile Include="Common\AjaxResult.cs" />
     <Compile Include="Dictionary\Customer.cs" />
+    <Compile Include="Dictionary\Employee.cs" />
+    <Compile Include="Dictionary\Position.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

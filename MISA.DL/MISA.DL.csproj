@@ -345,8 +345,13 @@
     <Compile Include="Base\IBaseDL.cs" />
     <Compile Include="DatabaseContext\DatabaseContext.cs" />
     <Compile Include="DatabaseContext\IDatabaseContext.cs" />
-    <Compile Include="Dictionary\CustomerDL.cs" />
+    <Compile Include="Dictionary\CustomerDL1.cs" />
+    <Compile Include="Dictionary\CustomerDL2.cs" />
+    <Compile Include="Dictionary\EmployeeDL.cs" />
+    <Compile Include="Dictionary\PositionDL.cs" />
     <Compile Include="Interface\ICustomerDL.cs" />
+    <Compile Include="Interface\IEmployeeDL.cs" />
+    <Compile Include="Interface\IPositionDL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

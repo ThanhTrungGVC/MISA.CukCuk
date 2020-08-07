@@ -2,18 +2,21 @@
 using MISA.DL.Base;
 using MISA.DL.Interface;
 using MISA.Entities;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 
 namespace MISA.DL
 {
-    public class CustomerDL:BaseDL1<Customer>, ICustomerDL
+    public class CustomerDL1:BaseDL1<Customer>, ICustomerDL
     {
-
-        public CustomerDL() : base()
+        /// <summary>
+        /// contructor
+        /// </summary>
+        public CustomerDL1() : base()
         {
         }
+
+        /************************** CÁC HÀM RIÊNG CỦA CUSTOMER DL ***************************/
 
         /// <summary>
         /// Tìm kiếm khách hàng

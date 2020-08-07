@@ -1,21 +1,19 @@
 ﻿using MISA.BL.Interface;
-using MISA.DL;
 using MISA.DL.Base;
 using MISA.DL.Interface;
 using MISA.Entities;
-using System;
 using System.Collections.Generic;
 
 namespace MISA.BL.Base
 {
-    public class CustomerBL: BaseBL1<Customer>, IBaseBL<Customer>, ICustomerBL
+    public class CustomerBL2 : BaseBL1<Customer>, IBaseBL<Customer>, ICustomerBL
     {
         protected readonly ICustomerDL _customerDL;
 
         /// <summary>
         /// contructor
         /// </summary>
-        public CustomerBL(IBaseDL<Customer> baseDL, ICustomerDL customerDL) : base(baseDL)
+        public CustomerBL2(IBaseDL<Customer> baseDL, ICustomerDL customerDL) : base(baseDL)
         {
             _customerDL = customerDL;
         }

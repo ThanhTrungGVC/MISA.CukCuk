@@ -44,11 +44,17 @@ namespace MISA.CukCuk
 
             // Register the Swagger generator, defining 1 or more Swagger documents
             services.AddSwaggerGen();
-            services.AddScoped(typeof(IBaseDL<>), typeof(BaseDL2<>));
-            services.AddScoped(typeof(IBaseBL<>), typeof(BaseBL2<>));
+
+            //base
+            services.AddScoped(typeof(IBaseDL<>), typeof(BaseDL1<>));
+            services.AddScoped(typeof(IBaseBL<>), typeof(BaseBL1<>));
+
+            //TODO: controller
             services.AddScoped(typeof(IBaseController<>), typeof(BaseController2<>));
-            services.AddScoped<ICustomerBL, CustomerBL>();
-            services.AddScoped<ICustomerDL, CustomerDL>();
+
+            // customer
+            services.AddScoped<ICustomerBL, CustomerBL1>();
+            services.AddScoped<ICustomerDL, CustomerDL1>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
