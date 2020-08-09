@@ -20,7 +20,7 @@ namespace MISA.CukCuk.Controllers
             _customerBL = customerBL;
         }
 
-        // GET: api/Customers?{field}={inputText}
+        // GET: api/Customers/search
         /// <summary>
         /// lấy danh sách khách hàng theo điều kiện (tìm kiếm)
         /// </summary>

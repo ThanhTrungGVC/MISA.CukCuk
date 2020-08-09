@@ -23,26 +23,33 @@ namespace MISA.BL.Base
         T GetEntityByID(Guid entityID);
 
         /// <summary>
+        /// Lấy thông tin entity theo Code
+        /// </summary>
+        /// <param name="code"></param>
+        /// <returns></returns>
+        T GetEntityByCode(string code);
+
+        /// <summary>
         /// Sửa thông tin khách hàng
         /// </summary>
         /// <param name="entityID"></param>
         /// <param name="entity"></param>
         /// <returns></returns>
-        T EditEntity(Guid entityID, T entity);
+        int EditEntity(Guid entityID, T entity);
 
         /// <summary>
-        /// Thêm mới khách hàng
+        /// Thêm mới entity
         /// </summary>
         /// <param name="entity"></param>
         /// <returns></returns>
-        T AddEntity(T entity);
+        int AddEntity(T entity);
 
         /// <summary>
         /// Xoá dữ liệu khách hàng
         /// </summary>
         /// <param name="entityID"></param>
         /// <returns></returns>
-        T DelEntity(Guid entityID);
+        int DelEntity(Guid entityID);
 
         /// <summary>
         /// hàm kiểm tra có tồn tại Entity ID

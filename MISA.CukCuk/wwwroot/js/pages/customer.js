@@ -2,7 +2,6 @@
     var customerJS = new CustomerJS();
 });
 
-
 class CustomerJS {
     constructor() {
         try {
@@ -290,7 +289,7 @@ class CustomerJS {
                 });
             }
         } else {
-            alert("Bạn cần chọn nhân viên trước khi xóa!");
+            alert("Bạn cần chọn khách hàng trước khi xóa!");
         }
     }
 
@@ -411,9 +410,9 @@ class CustomerJS {
      * */
     setValue() {
         var totalRow = allCustomer.length;
-        var totalPage = commonJS.getTotalPage(allCustomer);
+        var totalPage = commonJS.getTotalPage(totalRow);
         var indexRowStart = commonJS.getIndexStartRow();
-        var indexRowEnd = commonJS.getIndexEndRow(allCustomer);
+        var indexRowEnd = commonJS.getIndexEndRow(totalRow);
         debugger;
 
 
@@ -453,14 +452,14 @@ class CustomerJS {
      * CreatedBy: NTT (28/07/2020)
      * */
     changeNextPage() {
-        commonJS.changeNextPage(this, allCustomer);
+        commonJS.changeNextPage(this, allCustomer.length);
     }
 
     /**
      * chuyển đến trang cuối cùng
      * CreatedBy: NTT (28/07/2020)*/
     changeEndPage() {
-        commonJS.changeEndPage(this, allCustomer);
+        commonJS.changeEndPage(this, allCustomer.length);
     }
 //-------------------- End: CÁC HÀM ĐIỀU HƯỚNG, PHÂN TRANG ----------------------//
 

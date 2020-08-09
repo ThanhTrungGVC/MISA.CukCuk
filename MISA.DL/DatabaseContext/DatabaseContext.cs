@@ -162,6 +162,13 @@ namespace MISA.DL
                     .HasCharSet("utf8")
                     .HasCollation("utf8_general_ci");
 
+                entity.Property(e => e.CompanyName)
+                    .HasColumnType("varchar(100)")
+                    .HasDefaultValueSql("''")
+                    .HasComment("Tên công ty")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
                 entity.Property(e => e.CreatedBy)
                     .HasColumnType("varchar(100)")
                     .HasDefaultValueSql("''")
@@ -270,6 +277,12 @@ namespace MISA.DL
                     .HasColumnType("int(11)")
                     .HasDefaultValueSql("'0'")
                     .HasComment("tình trạng công việc (1-đang làm việc, 2-nghỉ việc)");
+
+                entity.Property(e => e.Image)
+                    .HasColumnType("string")
+                    .HasComment("ảnh đại diện")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
 
                 entity.HasOne(d => d.Position)
                     .WithMany(p => p.Employee)

@@ -25,8 +25,7 @@ namespace MISA.BL.Base
         /// <returns></returns>
         public virtual IEnumerable<T> GetAllEntities()
         {
-            var data = _baseDL.GetAllEntities();
-            return data.Take(5).ToList();
+            return _baseDL.GetAllEntities().Take(5).ToList();
         }
 
         /// <summary>
@@ -40,12 +39,22 @@ namespace MISA.BL.Base
         }
 
         /// <summary>
+        /// Lấy thông tin khách hàng theo code
+        /// </summary>
+        /// <param name="entityCode"></param>
+        /// <returns></returns>
+        public virtual T GetEntityByCode(string entityCode)
+        {
+            return _baseDL.GetEntityByCode(entityCode);
+        }
+
+        /// <summary>
         /// Sửa thông tin khách hàng
         /// </summary>
         /// <param name="customerID"></param>
         /// <param name="newCustomer"></param>
         /// <returns></returns>
-        public virtual T EditEntity(Guid entityID, T entity)
+        public virtual int EditEntity(Guid entityID, T entity)
         {
             return _baseDL.EditEntity(entityID, entity);
         }
@@ -55,7 +64,7 @@ namespace MISA.BL.Base
         /// </summary>
         /// <param name="entity"></param>
         /// <returns></returns>
-        public virtual T AddEntity(T entity)
+        public virtual int AddEntity(T entity)
         {
             return _baseDL.AddEntity(entity);
         }
@@ -65,7 +74,7 @@ namespace MISA.BL.Base
         /// </summary>
         /// <param name="entityID"></param>
         /// <returns></returns>
-        public virtual T DelEntity(Guid entityID)
+        public virtual int DelEntity(Guid entityID)
         {
             return _baseDL.DelEntity(entityID);
         }

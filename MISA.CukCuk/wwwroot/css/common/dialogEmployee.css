@@ -1,0 +1,348 @@
+﻿#dialog {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255,255,255,0.5);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: flex;
+}
+
+    #dialog .popup {
+        position: fixed;
+        width: 680px;
+        height: 480px;
+        background-color: #ffffff;
+        top: calc(50% - 200px);
+        left: calc(50% - 300px);
+        border-radius: 5px;
+        border: 5px solid #0072bc;
+    }
+
+.popup .popup-header {
+    color: #0072bc;
+    width: 100%;
+    background-color: #0072bc;
+    height: 22px;
+}
+
+    .popup .popup-header .popup-title {
+        float: left;
+        line-height: 17px;
+        padding-left: 4px;
+        color: #ffffff;
+    }
+
+    .popup .popup-header .btn-close {
+        position: absolute;
+        right: 3px;
+        text-align: center;
+        width: 16px;
+        height: 16px;
+        float: right;
+        line-height: 13px;
+        font-weight: 500;
+        border-radius: 50%;
+        border: 1px solid #ffffff;
+        color: #0072bc;
+        background-image: url('../../content/images/cancel.png');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+.popup-header .btn-close:hover {
+    cursor: pointer;
+}
+
+.popup .popup-body {
+    padding: 8px;
+}
+
+    .popup .popup-body .body-title {
+        font-weight: bold;
+    }
+
+    .popup .popup-body .info {
+        display: flex;
+        width: 100%;
+    }
+
+.popup-body .info .left-avatar {
+    width: 80%;
+}
+
+.popup-body .info .avatar {
+    width: 20%;
+    height: 165px;
+    align-items: center;
+    position: relative;
+    display: inline-block;
+}
+
+.info .avatar .img {
+    width: 130px;
+    height: 130px;
+}
+
+.avatar .img img {
+    width: 100%;
+    height: 100%;
+}
+
+.avatar .img:hover img {
+    -webkit-filter: blur(1.7px);
+}
+
+.avatar .img .sp-add {
+    display: none;
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+    cursor: pointer;
+    width: 25px;
+    height: 20px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.avatar .img .sp-close {
+    display: none;
+    position: absolute;
+    bottom: 37px;
+    left: 80px;
+}
+
+.avatar .img:hover span {
+    display: table-cell;
+}
+
+.avatar .img span input[type="button"] {
+    width: 30px;
+    height: 20px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.close-img {
+    background-image: url('/content/images/exclamation.png');
+    background-repeat: no-repeat;
+    background-position: 7px 3px;
+}
+
+.info .avatar .description {
+    width: 130px;
+    height: calc(100% - 130px);
+    text-align: center;
+    font-style: italic;
+}
+
+.description span{
+    font-weight: bold;
+}
+
+.popup .popup-body .row {
+    margin: 4px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 3px;
+}
+
+.popup-body .row label {
+    display: inline-block;
+    width: 135px;
+}
+
+.row label span {
+    color: #ff0000;
+}
+
+.popup-body .row input {
+    height: 18px;
+}
+
+    .popup-body .row input:focus {
+        border: 2px solid #0973b9;
+        outline: none;
+    }
+
+.popup-body .row select {
+    height: 23px;
+}
+
+.popup-body .row input[type="date"] {
+    height: 20px;
+}
+
+.popup-body .row .col-1 {
+    width: calc(100% - 147px);
+}
+
+.popup-body .row .col-2 {
+    width: calc(100% - 153px);
+}
+
+.popup-body .row .col-left {
+    width: 55%;
+    position: relative;
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+
+.popup-body .row .col-right {
+    width: 45%;
+    position: relative;
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+
+.col-right label {
+    width: 70px !important;
+}
+
+.col-right .input-right {
+    position: absolute;
+    right: 4px;
+    top: -3px;
+    width: calc(100% - 80px);
+}
+
+.col-left .input-left {
+    position: absolute;
+    top: -3px;
+    left: 135px;
+}
+
+.row .col-b-1 {
+    width: calc(100% - 143px);
+}
+
+.row .col-sl-1 {
+    width: calc(100% - 135px);
+}
+
+.col-left-1 {
+    width: 44%;
+    display: flex;
+    align-items: center;
+}
+
+    .col-left-1 input[type="text"] {
+        width: calc(100% - 151px);
+    }
+
+.col-right-1 {
+    width: 56%;
+    display: flex;
+    align-items: center;
+}
+
+    .col-right-1 label {
+        width: 80px !important;
+    }
+
+    .col-right-1 input {
+        width: calc(100% - 80px) !important;
+    }
+
+    .col-right-1 select {
+        width: calc(100% - 70px) !important;
+    }
+
+.popup .popup-footer {
+    height: 40px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+}
+
+    .popup .popup-footer button {
+        height: 28px;
+        padding-left: 0;
+        margin-right: 10px;
+        padding: 3px 15px 3px 15px;
+        display: flex;
+        background: none;
+        border: 1px solid #bababa;
+        align-items: center !important;
+    }
+
+    .popup .popup-footer .col-left {
+        position: absolute;
+        left: 10px;
+    }
+
+    .popup .popup-footer .col-right {
+        position: absolute;
+        right: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .popup .popup-footer .icon-help-small {
+        background: url('../../content/images/iconsprite.png') no-repeat 0 -1600px;
+        width: 16px;
+        height: 16px;
+        display: block;
+        margin-right: 5px;
+    }
+
+    .popup .popup-footer .icon-save-small {
+        background-image: url('../../content/images/save16.png');
+        display: block;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 15px;
+        width: 15px;
+        margin-right: 5px;
+    }
+
+    .popup .popup-footer .icon-add-small {
+        background-image: url('../../content/images/saveadd16.png');
+        display: block;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 18px;
+        width: 18px;
+        margin-right: 5px;
+    }
+
+    .popup .popup-footer .icon-cancel-small {
+        background-image: url('../../content/images/disable16.png');
+        display: block;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 18px;
+        width: 18px;
+        margin-right: 5px;
+    }
+
+button:hover {
+    cursor: pointer;
+    background-color: #c6c6c6 !important;
+}
+
+#txtSalary{
+    text-align: right;
+}
+
+.img span label {
+    font-weight: bold;
+    font-size: 17px;
+    padding-bottom: 5px;
+    /* Style as you please, it will become the visible UI component. */
+}
+
+#upload-avatar {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}

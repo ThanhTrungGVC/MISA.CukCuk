@@ -40,17 +40,28 @@ namespace MISA.DL.Base
         }
 
         /// <summary>
+        /// Lấy thông tin entity theo ID
+        /// </summary>
+        /// <param name="ID"></param>
+        /// <returns></returns>
+        public virtual T GetEntityByCode(string code)
+        {
+            var rowValue = _context.Set<T>().Find(code);
+            return rowValue;
+        }
+
+        /// <summary>
         /// Sửa thông tin entity
         /// </summary>
         /// <param name="ID"></param>
         /// <param name="Entity"></param>
         /// <returns></returns>
-        public virtual T EditEntity(Guid ID, T entity)
+        public virtual int EditEntity(Guid ID, T entity)
         {
             _context.Entry(entity).State = EntityState.Modified;
             _context.SaveChangesAsync();
 
-            return entity;
+            return 1;
         }
 
         /// <summary>
@@ -58,12 +69,12 @@ namespace MISA.DL.Base
         /// </summary>
         /// <param name="entity"></param>
         /// <returns></returns>
-        public virtual T AddEntity(T entity)
+        public virtual int AddEntity(T entity)
         {
             _context.Set<T>().Add(entity);
             _context.SaveChangesAsync();
 
-            return entity;
+            return 1;
         }
 
         /// <summary>
@@ -71,14 +82,14 @@ namespace MISA.DL.Base
         /// </summary>
         /// <param name="ID"></param>
         /// <returns></returns>
-        public virtual T DelEntity(Guid ID)
+        public virtual int DelEntity(Guid ID)
         {
             var entity = _context.Set<T>().Find(ID);
 
             _context.Set<T>().Remove(entity);
             _context.SaveChangesAsync();
 
-            return entity;
+            return 1;
         }
 
         /// <summary>

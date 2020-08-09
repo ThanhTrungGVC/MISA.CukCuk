@@ -20,3 +20,9 @@ D:\nttrung\MISA.CukCuk\MISA.Entities\bin\Debug\MISA.Entities.pdb
 D:\nttrung\MISA.CukCuk\MISA.Entities\obj\Debug\MISA.Entities.csprojAssemblyReference.cache
 D:\nttrung\MISA.CukCuk\MISA.Entities\obj\Debug\MISA.Entities.dll
 D:\nttrung\MISA.CukCuk\MISA.Entities\obj\Debug\MISA.Entities.pdb
+D:\MISA Fresher\Learning\Source code\C#\MISA.CukCuk\MISA.Entities\bin\Debug\MISA.Entities.dll
+D:\MISA Fresher\Learning\Source code\C#\MISA.CukCuk\MISA.Entities\bin\Debug\MISA.Entities.pdb
+D:\MISA Fresher\Learning\Source code\C#\MISA.CukCuk\MISA.Entities\obj\Debug\MISA.Entities.csprojAssemblyReference.cache
+D:\MISA Fresher\Learning\Source code\C#\MISA.CukCuk\MISA.Entities\obj\Debug\MISA.Entities.csproj.CoreCompileInputs.cache
+D:\MISA Fresher\Learning\Source code\C#\MISA.CukCuk\MISA.Entities\obj\Debug\MISA.Entities.dll
+D:\MISA Fresher\Learning\Source code\C#\MISA.CukCuk\MISA.Entities\obj\Debug\MISA.Entities.pdb

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MISA.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +9,6 @@ namespace MISA.BL.Interface
 {
     public interface IPositionBL
     {
+        Position getPositionByCode(string positionCode);
     }
 }

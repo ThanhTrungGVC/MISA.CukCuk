@@ -1,6 +1,7 @@
 ﻿using MISA.Entities.Base;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 
 namespace MISA.Entities
 {
@@ -53,6 +54,11 @@ namespace MISA.Entities
         /// Mã số thuế
         /// </summary>
         public string TaxCode { get; set; }
+
+        /// <summary>
+        /// tên công ty
+        /// </summary>
+        public string CompanyName { get; set; }
 
         /// <summary>
         /// email
@@ -113,6 +119,11 @@ namespace MISA.Entities
         /// mức lương
         /// </summary>
         public int? Salary { get; set; }
+
+        /// <summary>
+        /// ảnh đại diện
+        /// </summary>
+        public string Image { get; set; }
 
         #endregion
 

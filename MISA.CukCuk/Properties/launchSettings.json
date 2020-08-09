@@ -12,7 +12,7 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "page/category/customer.html", // link URL khi chạy file
+      "launchUrl": "page/category/employee.html", // link URL khi chạy file
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

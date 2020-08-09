@@ -8,9 +8,14 @@
     },
 
     Gender: {
-        Male: 1,
         Female: 0,
+        Male: 1,
         Other: 2
+    },
+
+    WorkState: {
+        Working: 1,
+        NonWorking:2,
     }
 
 }

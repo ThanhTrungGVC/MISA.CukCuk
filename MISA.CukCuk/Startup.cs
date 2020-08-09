@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using MISA.BL;
 using MISA.BL.Base;
 using MISA.BL.Interface;
 using MISA.CukCuk.Controllers;
@@ -49,12 +50,17 @@ namespace MISA.CukCuk
             services.AddScoped(typeof(IBaseDL<>), typeof(BaseDL1<>));
             services.AddScoped(typeof(IBaseBL<>), typeof(BaseBL1<>));
 
-            //TODO: controller
-            services.AddScoped(typeof(IBaseController<>), typeof(BaseController2<>));
-
             // customer
             services.AddScoped<ICustomerBL, CustomerBL1>();
             services.AddScoped<ICustomerDL, CustomerDL1>();
+
+            //employee
+            services.AddScoped<IEmployeeBL, EmployeeBL>();
+            services.AddScoped<IEmployeeDL, EmployeeDL>();
+
+            //position
+            services.AddScoped<IPositionBL, PositionBL>();
+            services.AddScoped<IPositionDL, PositionDL>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

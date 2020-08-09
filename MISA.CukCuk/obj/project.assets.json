@@ -9020,23 +9020,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\TEMP.RD.003\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\thanh\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\nttrung\\MISA.CukCuk\\MISA.CukCuk\\MISA.CukCuk.csproj",
+      "projectUniqueName": "D:\\MISA Fresher\\Learning\\Source code\\C#\\MISA.CukCuk\\MISA.CukCuk\\MISA.CukCuk.csproj",
       "projectName": "MISA.CukCuk",
-      "projectPath": "D:\\nttrung\\MISA.CukCuk\\MISA.CukCuk\\MISA.CukCuk.csproj",
-      "packagesPath": "C:\\Users\\TEMP.RD.003\\.nuget\\packages\\",
-      "outputPath": "D:\\nttrung\\MISA.CukCuk\\MISA.CukCuk\\obj\\",
+      "projectPath": "D:\\MISA Fresher\\Learning\\Source code\\C#\\MISA.CukCuk\\MISA.CukCuk\\MISA.CukCuk.csproj",
+      "packagesPath": "C:\\Users\\thanh\\.nuget\\packages\\",
+      "outputPath": "D:\\MISA Fresher\\Learning\\Source code\\C#\\MISA.CukCuk\\MISA.CukCuk\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\TEMP.RD.003\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\thanh\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9049,14 +9045,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\nttrung\\MISA.CukCuk\\MISA.BL\\MISA.BL.csproj": {
-              "projectPath": "D:\\nttrung\\MISA.CukCuk\\MISA.BL\\MISA.BL.csproj"
+            "D:\\MISA Fresher\\Learning\\Source code\\C#\\MISA.CukCuk\\MISA.BL\\MISA.BL.csproj": {
+              "projectPath": "D:\\MISA Fresher\\Learning\\Source code\\C#\\MISA.CukCuk\\MISA.BL\\MISA.BL.csproj"
             },
-            "D:\\nttrung\\MISA.CukCuk\\MISA.Common\\MISA.Common.csproj": {
-              "projectPath": "D:\\nttrung\\MISA.CukCuk\\MISA.Common\\MISA.Common.csproj"
+            "D:\\MISA Fresher\\Learning\\Source code\\C#\\MISA.CukCuk\\MISA.Common\\MISA.Common.csproj": {
+              "projectPath": "D:\\MISA Fresher\\Learning\\Source code\\C#\\MISA.CukCuk\\MISA.Common\\MISA.Common.csproj"
             },
-            "D:\\nttrung\\MISA.CukCuk\\MISA.Entities\\MISA.Entities.csproj": {
-              "projectPath": "D:\\nttrung\\MISA.CukCuk\\MISA.Entities\\MISA.Entities.csproj"
+            "D:\\MISA Fresher\\Learning\\Source code\\C#\\MISA.CukCuk\\MISA.Entities\\MISA.Entities.csproj": {
+              "projectPath": "D:\\MISA Fresher\\Learning\\Source code\\C#\\MISA.CukCuk\\MISA.Entities\\MISA.Entities.csproj"
             }
           }
         }
@@ -9133,7 +9129,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

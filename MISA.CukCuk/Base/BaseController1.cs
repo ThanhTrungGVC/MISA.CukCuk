@@ -30,7 +30,7 @@ namespace MISA.CukCuk.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        public AjaxResult GetAllEntities()
+        public virtual AjaxResult GetAllEntities()
         {
             var ajaxResult = new AjaxResult();
             try
@@ -55,7 +55,7 @@ namespace MISA.CukCuk.Controllers
         /// <param name="customerID"></param>
         /// <returns></returns>
         [HttpGet("{entityID}")]
-        public AjaxResult GetEntityByID(Guid entityID)
+        public virtual AjaxResult GetEntityByID(Guid entityID)
         {
             var ajaxResult = new AjaxResult();
             try
@@ -81,12 +81,12 @@ namespace MISA.CukCuk.Controllers
         /// <param name="entity"></param>
         /// <returns></returns>
         [HttpPut("{entityID}")]
-        public AjaxResult PutEntity(Guid entityID, [FromBody] T entity)
+        public virtual AjaxResult PutEntity(Guid entityID, [FromBody] T entity)
         {
             var ajaxResult = new AjaxResult();
             try
             {
-                ajaxResult.Data = _baseBL.EditEntity(entityID, entity);
+                ajaxResult.Data = _baseBL.EditEntity(entityID, entity);;
                 ajaxResult.Success = true;
                 ajaxResult.Messanger = Properties.Resources.VN_SuccessUpdate;
             }
@@ -106,7 +106,7 @@ namespace MISA.CukCuk.Controllers
         /// <param name="entity"></param>
         /// <returns></returns>
         [HttpPost]
-        public AjaxResult PostEntity(T entity)
+        public virtual AjaxResult PostEntity(T entity)
         {
             var ajaxResult = new AjaxResult();
             try
@@ -131,7 +131,7 @@ namespace MISA.CukCuk.Controllers
         /// <param name="entityID"></param>
         /// <returns></returns>
         [HttpDelete("{entityID}")]
-        public AjaxResult DeleteCustomer(Guid entityID)
+        public virtual AjaxResult DeleteCustomer(Guid entityID)
         {
             var ajaxResult = new AjaxResult();
             try
