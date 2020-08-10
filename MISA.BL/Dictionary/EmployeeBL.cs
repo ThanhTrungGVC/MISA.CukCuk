@@ -57,6 +57,15 @@ namespace MISA.BL
         }
 
         /// <summary>
+        /// lấy nhân viên có mã Code lớn nhất
+        /// </summary>
+        /// <returns></returns>
+        public virtual Employee GetLastEmployee()
+        {
+            return _employeeDL.GetLastEmployee();
+        }
+
+        /// <summary>
         /// Tìm kiếm thông tin nhân viên
         /// </summary>
         /// <param name="cus"></param>

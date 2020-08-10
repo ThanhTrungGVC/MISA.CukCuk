@@ -67,6 +67,26 @@ namespace MISA.CukCuk.Controllers
             return ajaxResult;
         }
 
+        //GET: api/Employees/LastEmployee
+        [HttpGet("LastEmployee")]
+        public virtual AjaxResult GetLastEmployee()
+        {
+            var ajaxResult = new AjaxResult();
+            try
+            {
+                ajaxResult.Data = _employeeBL.GetLastEmployee();
+                ajaxResult.Success = true;
+                ajaxResult.Messanger = Properties.Resources.VN_SuccessSearch;
+            }
+            catch (Exception)
+            {
+                ajaxResult.Success = false;
+                ajaxResult.Messanger = Properties.Resources.VN_ErrSearch;
+            }
+
+            return ajaxResult;
+        }
+
 
         // GET: api/Employees?{field}={inputText}
         /// <summary>

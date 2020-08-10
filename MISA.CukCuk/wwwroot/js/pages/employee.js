@@ -1,5 +1,30 @@
-﻿$(document).ready(function () {
-    var employeeJS = new EmployeeJS();
+﻿var employeeJS;
+$(document).ready(function () {
+    employeeJS = new EmployeeJS();
+
+    // bắt sự kiện lưu
+    $(window).bind('keydown', function (event) {
+        if (event.altKey || event.metaKey) {
+            switch (String.fromCharCode(event.which).toLowerCase()) {
+                case 'n':
+                    event.preventDefault();
+                    employeeJS.addEmployee();
+                    break;
+                case 'd':
+                    event.preventDefault();
+                    employeeJS.duplicateEmployee();
+                    break;
+                case 'e':
+                    event.preventDefault();
+                    employeeJS.editEmployee();
+                    break;
+            }
+        } else {
+            if (event.which == 46) {
+                employeeJS.deleteEmployees();
+            }
+        }
+    });
 });
 
 var listEmployees;            // biến lưu trữ thông tin nhân viên
@@ -7,6 +32,8 @@ var indexRowSelected = -1;      // biến lưu trữ vị trí bản ghi đượ
 var status = "none";            // trạng thái thêm sửa xóa
 var pageLanguage = Resource.Language.VI;    // dữ liệu ngôn ngữ của trang web
 var employeeAvatar = "/content/images/avatardefault.png";
+var positions = commonJS.getAllPosition();
+var maxCode = 0;
 
 class EmployeeJS {
     constructor() {
@@ -38,7 +65,7 @@ class EmployeeJS {
         $("#btnEdit").on("click", 3, this.toolbarItemOnClick.bind(this));
 
         // khi nút xóa được click
-        $("#btnDelete").click(this.deleteCustomer.bind(this));
+        $("#btnDelete").click(this.deleteEmployees.bind(this));
 
         // close dialog
         $("#btn-close").click(this.closeDialog.bind(this));
@@ -101,31 +128,62 @@ class EmployeeJS {
      * */
     showDialog() {
         var me = this;
-        $("#dialog").show();
-        $('#dialog input')[0].focus();
+        var modal = $('#dialog');
 
-        // bắt sự kiện lưu
-        $("#dialog").bind('keydown', function (event) {
-            if (event.ctrlKey || event.metaKey) {
-                switch (String.fromCharCode(event.which).toLowerCase()) {
-                    case 's':
-                        event.preventDefault();
-                        me.saveData();
-                        break;
-                    case 'q':
-                        event.preventDefault();
-                        me.hideDialog();
-                        break;
-                }
+        modal.show();
+        
+        var listEmlementFocus = 'input:not([disabled]), select:not([disabled]), button:not([disabled]), [tabindex="0"]';
+        var listElements = modal.find(listEmlementFocus);
+        listElements = Array.prototype.slice.call(listElements);
 
-                if (event.shiftKey) {
-                    if (String.fromCharCode(event.which).toLowerCase() == 's') {
-                        me.saveAddData();
+        var firstElement = listElements[0];
+        var lastElement = listElements[listElements.length - 1];
+
+        // Focus first child
+        firstElement.focus();
+
+        // Listen for and trap the keyboard
+        modal.on('keydown', function (e) {
+            // Check for TAB key press
+            if (e.keyCode === 9) {
+
+                // SHIFT + TAB
+                if (e.shiftKey) {
+                    if (document.activeElement === firstElement) {
+                        e.preventDefault();
+                        lastElement.focus();
+                    }
+
+                    // TAB
+                } else {
+                    if (document.activeElement === lastElement) {
+                        e.preventDefault();
+                        firstElement.focus();
                     }
                 }
             } else {
-                if (event.key === "Escape") {
+                // ESCAPE
+                if (e.keyCode === 27) {
                     me.closeDialog();
+                } else {
+                    if (e.ctrlKey || e.metaKey) {
+                        switch (String.fromCharCode(e.which).toLowerCase()) {
+                            case 's':
+                                e.preventDefault();
+                                me.saveData();
+                                break;
+                            case 'q':
+                                e.preventDefault();
+                                me.hideDialog();
+                                break;
+                        }
+
+                        if (e.shiftKey) {
+                            if (String.fromCharCode(e.which).toLowerCase() == 's') {
+                                me.saveAddData();
+                            }
+                        }
+                    }
                 }
             }
         });
@@ -139,6 +197,8 @@ class EmployeeJS {
             var value = parseInt($(this).val().replace(/[\,]/g, ''))
             $(this).val(commonJS.formatMoney(value));
         });
+
+        
     }
 
     /**
@@ -172,6 +232,7 @@ class EmployeeJS {
             this.hideDialog();
         }
     }
+
 //-------------------- End: CÁC HÀM ĐÓNG MỞ DIALOG -------------------//
 
 
@@ -240,6 +301,9 @@ class EmployeeJS {
 //-------------------- End: CÁC HÀM XỬ LÝ KHI LỰA CHỌN MỘT BẢN GHI -------------------------//
 
 
+   
+
+
 //-------------------- Start: CÁC HÀM LẤY - THÊM - SỬA - XOÁ - NHÂN BẢN - TÌM KIẾM KHÁCH HÀNG --------------------//
     /**
      * lấy thông tin toàn bộ khách hàng trên scdl
@@ -276,6 +340,29 @@ class EmployeeJS {
         // đặt trạng thái
         status = "add";
 
+        // hiện thị dialog
+        this.showDialog();
+
+        //set code
+        var code = (maxCode+1).toString();
+        while (code.length < 6) {
+            code = "0" + code;
+        }
+        $("#txtEmployeeCode").val("NV" + code);
+    }
+
+    /**
+     * Lưu thông tin và thêm mới form nhân viên
+     * CreatedBy: NTTRUNG (08/08/2020)
+     * */
+    saveAddData() {
+        // đặt trạng thái
+        status = "add";
+
+        //lưu thông tin
+        this.saveData();
+
+        // mở dialog
         this.showDialog();
     }
 
@@ -345,10 +432,10 @@ class EmployeeJS {
     }
 
     /**
-     * hàm xóa dữ liệu khách hàng
+     * hàm xóa dữ liệu nhân viên
      * CreatedBy: NTT (24/07/2020)
      * */
-    deleteCustomer() {
+    deleteEmployees() {
 
         var me = this;
         var mesess;
@@ -378,6 +465,7 @@ class EmployeeJS {
                 });
 
                 alert(mesess);
+                
 
                 // load lại dữ liệu - gọi lại api để lấy lại dữ liệu sau khi thay đổi
                 listEmployees = me.getAllEmployees();
@@ -608,19 +696,31 @@ class EmployeeJS {
             // lấy vị trí các hàng cần in dữ liệu
             var indexRowStart = commonJS.getIndexStartRow() - 1;
             var indexRowEnd = commonJS.getIndexEndRow(listEmployees.length) - 1;
-
+            
             for (var i = indexRowStart; i <= indexRowEnd; i++) {
                 debugger
                 var item = listEmployees[i];
+                item['Department'] = item['Department'] || "";
+                item['TaxCode'] = item['TaxCode'] || "";
+                item['Email'] = item['Email'] || "";
+
+                var code = parseInt(item['EmployeeCode'].replace("NV", ""));
+                if (code > maxCode) maxCode = code;
+
                 var employeeInfoHTML = $(`<tr>
-                                <td class="td-first align-center">`+ item['EmployeeCode'] + `</td>
+                                <td class="td-first">`+ item['EmployeeCode'] + `</td>
                                 <td>`+ item['FullName'] + `</td>
                                 <td>`+ item['Department'] + `</td>
+                                <td>`+ positions.find(x => x.PositionID == item['PositionId']).PositionName  + `</td>
                                 <td>`+ item['TaxCode'] + `</td>
                                 <td class="align-center">`+ commonJS.formatDate(item['Birthday']) + `</td>
-                                <td class="align-center">`+ commonJS.formatMoney(item["Salary"]) + `</td>
+                                <td class="align-right">`+ commonJS.formatMoney(item["Salary"]) + `</td>
                                 <td>`+ commonJS.workStateToValue(item['WorkState']) + `</td>
+                                <td>`+ item['Email'] + `</td>
                             </tr>`);
+                if ($("tr td").val() == "null") {
+                    $("tr td").val("");
+                }
                 employeeInfoHTML.data("id", item["EmployeeID"]);
 
                 $('table#tbListEmployees tbody').append(employeeInfoHTML);
@@ -635,17 +735,6 @@ class EmployeeJS {
 
 
 //-------------------- Start: CÁC HÀM XỬ LÝ LƯU DỮ LIỆU ------------------//
-    /**
-     * Lưu thông tin và thêm mới form nhân viên
-     * CreatedBy: NTTRUNG (08/08/2020)
-     * */
-    saveAddData() {
-        //lưu thông tin
-        this.saveData();
-
-        // mở dialog
-        this.showDialog();
-    }
 
     /**
      * Lưu lại thông tin khách hàng

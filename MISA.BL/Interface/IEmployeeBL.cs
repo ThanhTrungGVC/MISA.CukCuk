@@ -13,14 +13,15 @@ namespace MISA.BL.Interface
         /// Tìm kiếm thông tin nhân viên
         /// </summary>
         /// <param name="cus"></param>
-        /// <returns></returns>
+        /// <returns>List Employee</returns>
         IEnumerable<Employee> SearchEmployees(Employee employee);
 
         /// <summary>
         /// Thêm mới nhân viên
         /// </summary>
         /// <param name="entity"></param>
-        /// <returns></returns>
+        /// <returns>int</returns>
+        /// CreatedBy: NTT (10/08/2020)
         int AddEntity(Employee employee);
 
         /// <summary>
@@ -28,7 +29,15 @@ namespace MISA.BL.Interface
         /// </summary>
         /// <param name="entityID"></param>
         /// <param name="entity"></param>
-        /// <returns></returns>
+        /// <returns>(1-thành công, -1-thất bại)</returns>
+        /// CreatedBy: NTT (10/08/2020)
         int EditEntity(Guid entityID, Employee employee);
+
+        /// <summary>
+        /// Lấy nhân viên có mã Code lớn nhất
+        /// </summary>
+        /// <returns>Employee</returns>
+        /// CreatedBy: NTT (10/08/2020)
+        Employee GetLastEmployee();
     }
 }

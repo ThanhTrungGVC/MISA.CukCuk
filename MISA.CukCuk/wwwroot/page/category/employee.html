@@ -13,6 +13,7 @@
     <link href="/css/common/tableList.css" rel="stylesheet" />
     <link href="/css/common/tablePageding.css" rel="stylesheet" />
     <link href="/css/common/dialogEmployee.css" rel="stylesheet" />
+    <link href="/css/common/dialogNotification.css" rel="stylesheet" />
     <link href="/css/page/employee.css" rel="stylesheet" />
 </head>
 
@@ -69,8 +70,6 @@
     </div>
 
     <!---------------------- End: HEADER ---------------------->
-
-
     <!---------------------- Start: CONTENT ---------------------->
 
     <div class="container">
@@ -217,22 +216,22 @@
             <div class="table">
                 <!--thanh tool bar-->
                 <div class="navbar">
-                    <div id="btnAdd" class="navbar-item" title="Thêm mới nhân viên">
+                    <div id="btnAdd" class="navbar-item" title="Thêm mới nhân viên (Alt + N)">
                         <div class="navbar-item-icon nb-icon-add"></div>
                         <div class="navbar-item-content">Thêm</div>
                     </div>
 
-                    <div id="btnDuplicate" class="navbar-item" title="Lựa chọn một nhân viên để nhân bản">
+                    <div id="btnDuplicate" class="navbar-item" title="Lựa chọn một nhân viên để nhân bản (Alt + D)">
                         <div class="navbar-item-icon nb-icon-duplicate"></div>
                         <div class="navbar-item-content">Nhân bản</div>
                     </div>
 
-                    <div id="btnEdit" class="navbar-item" title="Lựa chọn một nhân viên để sửa thông tin">
+                    <div id="btnEdit" class="navbar-item" title="Lựa chọn một nhân viên để sửa thông tin (Alt + E)">
                         <div class="navbar-item-icon nb-icon-edit"></div>
                         <div class="navbar-item-content">Sửa</div>
                     </div>
 
-                    <div id="btnDelete" class="navbar-item" title="Lựa chọn một nhân viên để xóa">
+                    <div id="btnDelete" class="navbar-item" title="Lựa chọn một nhân viên để xóa (Del)">
                         <div class="navbar-item-icon nb-icon-delete"></div>
                         <div class="navbar-item-content">Xóa</div>
                     </div>
@@ -276,11 +275,12 @@
                             <col class="colum_employeeCode" span="1" />
                             <col class="colum_employeeName" span="1" />
                             <col class="colum_company" span="1" />
+                            <col class="colum_position" span="1" />
                             <col class="colum_taxCode" span="1" />
-                            <col class="colum_address" span="1" />
                             <col class="colum_birthday" span="1" />
                             <col class="colum_salary" span="1" />
                             <col class="colum_workState" span="1" />
+                            <col class="colum_email" span="1" />
                         </colgroup>
 
                         <thead>
@@ -289,19 +289,23 @@
                                 <th id="th-first">Mã nhân viên</th>
                                 <th>Tên nhân viên</th>
                                 <th>Phòng ban</th>
+                                <th>Chức vụ</th>
                                 <th>Mã số thuế</th>
                                 <th>Ngày sinh</th>
                                 <th>Mức lương</th>
                                 <th>Tình trạng</th>
+                                <th>Email</th>
                             </tr>
                             <tr style="position: sticky">
                                 <td id="th-first" class="align-center td-sticky"><input id="s_EmployeeCode" type="text" /></td>
                                 <td class="align-center td-sticky"><input id="s_EmployeeName" type="text" /></td>
                                 <td class="align-center td-sticky"><input id="s_Department" type="text" /></td>
+                                <td class="align-center td-sticky"><input id="s_Position" type="text" /></td>
                                 <td class="align-center td-sticky"><input id="s_TaxCode" type="text" /></td>
                                 <td class="align-center td-sticky"><input id="s_Birthday" type="date" /></td>
                                 <td class="align-center td-sticky"><input id="s_Salary" type="number" /></td>
                                 <td class="align-center td-sticky"><input id="s_WorkSate" type="text" /></td>
+                                <td class="align-center td-sticky"><input id="s_Email" type="text" /></td>
                             </tr>
                         </thead>
 
@@ -365,8 +369,6 @@
     </div>
 
     <!---------------------- End: CONTENT ---------------------->
-
-
     <!---------------------- Start: DIALOG CUSTOMER ----------------------->
 
     <div id="dialog" style="display: none;">
@@ -383,7 +385,7 @@
 
                 <div class="info">
                     <div class="left-avatar">
-                        <div class="row">
+                        <div class="row" id="code">
                             <label>Mã nhân viên <span>(*)</span></label>
                             <input id="txtEmployeeCode" type="text" class="col-1 input-left" title="Mã nhân viên" />
                         </div>
@@ -429,7 +431,7 @@
                     </div>
 
                     <div class="avatar">
-                        <div class="img">
+                        <div class="img" tabindex="0">
                             <img id="avatar-img" src="/content/images/avatardefault.png" />
                             <span class="sp-add">
                                 <label class="add-img" for="upload-avatar">...</label>
@@ -509,8 +511,8 @@
                         <i class="icon-cancel-small"></i>Hủy bỏ
                     </button>
                 </div>
-                <div class="col-left">
-                    <button id="btnHelp">
+                <div id="btn-last" class="col-left">
+                    <button id="btnHelp" onfocus="employeeJS.focusFirst()">
                         <i class="icon-help-small"></i>Giúp
                     </button>
                 </div>
@@ -519,7 +521,37 @@
     </div>
 
     <!---------------------- End: DIALOG CUSTOMER ------------------------->
-    
+
+
+    <!---------------------- End: DIALOG NOTIFICATION ------------------------->
+
+    <div id="notification" style="display: none;">
+        <div class="popup">
+            <div class="popup-header">CUKCUK - Quản lý nhà hàng</div>
+            <div class="popup-body">
+                <div class="containers">
+                    <div id="notifi-img" class="notifi-img"></div>
+                    <div class="notifi-text"><p id="notifi-text">MISA.CUKCUK</p></div>
+                </div>
+
+                <div class="footers">
+                    <div class="col-right">
+                        <button id="btnYes" style="display: none;">
+                            Có
+                        </button>
+                        <button id="btnNo" style="display: none;">
+                            Không
+                        </button>
+                        <button id="btnAgree" style="display: none;">
+                            Đồng ý
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>        
+
+    <!---------------------- End: DIALOG NOTIFICATION ------------------------->
 
 
     <!--include JQuery and js-->

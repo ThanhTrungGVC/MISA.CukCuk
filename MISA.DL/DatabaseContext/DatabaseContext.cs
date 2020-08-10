@@ -279,7 +279,7 @@ namespace MISA.DL
                     .HasComment("tình trạng công việc (1-đang làm việc, 2-nghỉ việc)");
 
                 entity.Property(e => e.Image)
-                    .HasColumnType("string")
+                    .HasColumnType("text")
                     .HasComment("ảnh đại diện")
                     .HasCharSet("utf8")
                     .HasCollation("utf8_general_ci");

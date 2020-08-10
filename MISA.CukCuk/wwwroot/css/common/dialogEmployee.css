@@ -72,7 +72,7 @@
 }
 
 .popup-body .info .avatar {
-    width: 20%;
+    width: 130px;
     height: 165px;
     align-items: center;
     position: relative;
@@ -83,6 +83,11 @@
     width: 130px;
     height: 130px;
 }
+
+    .info .avatar .img:focus {
+        border: 2px solid #0973b9;
+        outline: none;
+    }
 
 .avatar .img img {
     width: 100%;
@@ -135,6 +140,10 @@
     background-position: 7px 3px;
 }
 
+table {
+    min-width: 1544px;
+}
+
 .info .avatar .description {
     width: 130px;
     height: calc(100% - 130px);
@@ -163,6 +172,10 @@
     color: #ff0000;
 }
 
+#s_Birthday {
+    width: 80px;
+}
+
 .popup-body .row input {
     height: 18px;
 }
@@ -175,6 +188,11 @@
 .popup-body .row select {
     height: 23px;
 }
+
+    .popup-body .row select:focus {
+        border: 2px solid #0973b9;
+        outline: none;
+    }
 
 .popup-body .row input[type="date"] {
     height: 20px;
@@ -275,6 +293,11 @@
         align-items: center !important;
     }
 
+    .popup .popup-footer button:focus{
+        border: 2px solid #0973b9;
+        outline: none;
+    }
+
     .popup .popup-footer .col-left {
         position: absolute;
         left: 10px;
@@ -345,4 +368,47 @@ button:hover {
     opacity: 0;
     position: absolute;
     z-index: -1;
+}
+
+/************ chiều rộng các cột ***********/
+.colum_employeeCode{
+    width: 7%;
+    min-width: 90px;
+}
+
+.colum_employeeName{
+    width: 15%;
+    min-width: 150px;
+}
+
+.colum_company{
+    width: 15%;
+    min-width: 150px;
+}
+
+.colum_position {
+    width: 15%;
+    min-width: 150px;
+}
+
+.colum_taxCode{
+    width: 7%;
+    min-width: 90px;
+}
+
+.colum_birthday{
+    width: 5%;
+}
+
+.colum_salary{
+    width: 10%;
+    min-width: 100px;
+}
+
+.colum_workState{
+    width: 10%;
+}
+
+.colum_email{
+    width: 16%;
 }

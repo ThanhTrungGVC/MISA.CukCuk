@@ -26,7 +26,8 @@ namespace MISA.DL
         /// tìm kiếm nhân viên dựa vào mã nhân viên
         /// </summary>
         /// <param name="employeeCode"></param>
-        /// <returns></returns>
+        /// <returns>Employee</returns>
+        /// CreatedBy: NTT (10/08/2020)
         public virtual Employee GetEmployeeByCode(string employeeCode)
         {
             var data = _context.Employee.Where(i => i.EmployeeCode == employeeCode).FirstOrDefault();
@@ -34,10 +35,22 @@ namespace MISA.DL
         }
 
         /// <summary>
+        /// lấy nhân viên có mã Code lớn nhất
+        /// </summary>
+        /// <returns>Employee</returns>
+        /// CreatedBy: NTT (10/08/2020)
+        public virtual Employee GetLastEmployee()
+        {
+            var data = _context.Employee.OrderBy(e => e.EmployeeCode).FirstOrDefault();
+            return data;
+        }
+
+        /// <summary>
         /// Tìm kiếm khách hàng
         /// </summary>
         /// <param name="cus"></param>
-        /// <returns></returns>
+        /// <returns>List Employees</returns>
+        /// CreatedBy: NTT (10/08/2020)
         public virtual IEnumerable<Employee> SearchEmployees(Employee em)
         {
             string query = "SELECT * FROM Employee e ";

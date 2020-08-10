@@ -13,14 +13,23 @@ namespace MISA.DL.Interface
         /// tìm kiếm nhân viên
         /// </summary>
         /// <param name="employee"></param>
-        /// <returns></returns>
+        /// <returns>List Employees</returns>
+        /// CreatedBy: NTT (10/08/2020)
         IEnumerable<Employee> SearchEmployees(Employee employee);
 
         /// <summary>
         /// tìm kiếm nhân viên dựa vào mã nhân viên
         /// </summary>
         /// <param name="employeeCode"></param>
-        /// <returns></returns>
+        /// <returns>Employee</returns>
+        /// CreatedBy: NTT (10/08/2020)
         Employee GetEmployeeByCode(string employeeCode);
+
+        /// <summary>
+        /// lấy nhân viên có mã Code lớn nhất
+        /// </summary>
+        /// <returns>Employee</returns>
+        /// CreatedBy: NTT (10/08/2020)
+        Employee GetLastEmployee();
     }
 }

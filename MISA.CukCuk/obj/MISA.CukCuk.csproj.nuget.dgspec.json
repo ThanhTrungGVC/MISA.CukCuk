@@ -1,25 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "D:\\MISA Fresher\\Learning\\Source code\\C#\\MISA.CukCuk\\MISA.CukCuk\\MISA.CukCuk.csproj": {}
+    "D:\\nttrung\\MISA.CukCuk\\MISA.CukCuk\\MISA.CukCuk.csproj": {}
   },
   "projects": {
-    "D:\\MISA Fresher\\Learning\\Source code\\C#\\MISA.CukCuk\\MISA.BL\\MISA.BL.csproj": {
+    "D:\\nttrung\\MISA.CukCuk\\MISA.BL\\MISA.BL.csproj": {
+      "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MISA Fresher\\Learning\\Source code\\C#\\MISA.CukCuk\\MISA.BL\\MISA.BL.csproj",
+        "projectUniqueName": "D:\\nttrung\\MISA.CukCuk\\MISA.BL\\MISA.BL.csproj",
         "projectName": "MISA.BL",
-        "projectPath": "D:\\MISA Fresher\\Learning\\Source code\\C#\\MISA.CukCuk\\MISA.BL\\MISA.BL.csproj",
+        "projectPath": "D:\\nttrung\\MISA.CukCuk\\MISA.BL\\MISA.BL.csproj",
         "frameworks": {
           "net472": {
             "projectReferences": {
-              "D:\\MISA Fresher\\Learning\\Source code\\C#\\MISA.CukCuk\\MISA.Common\\MISA.Common.csproj": {
-                "projectPath": "D:\\MISA Fresher\\Learning\\Source code\\C#\\MISA.CukCuk\\MISA.Common\\MISA.Common.csproj"
+              "D:\\nttrung\\MISA.CukCuk\\MISA.Common\\MISA.Common.csproj": {
+                "projectPath": "D:\\nttrung\\MISA.CukCuk\\MISA.Common\\MISA.Common.csproj"
               },
-              "D:\\MISA Fresher\\Learning\\Source code\\C#\\MISA.CukCuk\\MISA.DL\\MISA.DL.csproj": {
-                "projectPath": "D:\\MISA Fresher\\Learning\\Source code\\C#\\MISA.CukCuk\\MISA.DL\\MISA.DL.csproj"
+              "D:\\nttrung\\MISA.CukCuk\\MISA.DL\\MISA.DL.csproj": {
+                "projectPath": "D:\\nttrung\\MISA.CukCuk\\MISA.DL\\MISA.DL.csproj"
               },
-              "D:\\MISA Fresher\\Learning\\Source code\\C#\\MISA.CukCuk\\MISA.Entities\\MISA.Entities.csproj": {
-                "projectPath": "D:\\MISA Fresher\\Learning\\Source code\\C#\\MISA.CukCuk\\MISA.Entities\\MISA.Entities.csproj"
+              "D:\\nttrung\\MISA.CukCuk\\MISA.Entities\\MISA.Entities.csproj": {
+                "projectPath": "D:\\nttrung\\MISA.CukCuk\\MISA.Entities\\MISA.Entities.csproj"
               }
             }
           }
@@ -29,27 +30,31 @@
         "net472": {}
       }
     },
-    "D:\\MISA Fresher\\Learning\\Source code\\C#\\MISA.CukCuk\\MISA.Common\\MISA.Common.csproj": {
+    "D:\\nttrung\\MISA.CukCuk\\MISA.Common\\MISA.Common.csproj": {
+      "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MISA Fresher\\Learning\\Source code\\C#\\MISA.CukCuk\\MISA.Common\\MISA.Common.csproj",
+        "projectUniqueName": "D:\\nttrung\\MISA.CukCuk\\MISA.Common\\MISA.Common.csproj",
         "projectName": "MISA.Common",
-        "projectPath": "D:\\MISA Fresher\\Learning\\Source code\\C#\\MISA.CukCuk\\MISA.Common\\MISA.Common.csproj"
+        "projectPath": "D:\\nttrung\\MISA.CukCuk\\MISA.Common\\MISA.Common.csproj"
       },
       "frameworks": {
         "net472": {}
       }
     },
-    "D:\\MISA Fresher\\Learning\\Source code\\C#\\MISA.CukCuk\\MISA.CukCuk\\MISA.CukCuk.csproj": {
+    "D:\\nttrung\\MISA.CukCuk\\MISA.CukCuk\\MISA.CukCuk.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MISA Fresher\\Learning\\Source code\\C#\\MISA.CukCuk\\MISA.CukCuk\\MISA.CukCuk.csproj",
+        "projectUniqueName": "D:\\nttrung\\MISA.CukCuk\\MISA.CukCuk\\MISA.CukCuk.csproj",
         "projectName": "MISA.CukCuk",
-        "projectPath": "D:\\MISA Fresher\\Learning\\Source code\\C#\\MISA.CukCuk\\MISA.CukCuk\\MISA.CukCuk.csproj",
-        "packagesPath": "C:\\Users\\thanh\\.nuget\\packages\\",
-        "outputPath": "D:\\MISA Fresher\\Learning\\Source code\\C#\\MISA.CukCuk\\MISA.CukCuk\\obj\\",
+        "projectPath": "D:\\nttrung\\MISA.CukCuk\\MISA.CukCuk\\MISA.CukCuk.csproj",
+        "packagesPath": "C:\\Users\\TEMP.RD.005\\.nuget\\packages\\",
+        "outputPath": "D:\\nttrung\\MISA.CukCuk\\MISA.CukCuk\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\thanh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\TEMP.RD.005\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -62,14 +67,14 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\MISA Fresher\\Learning\\Source code\\C#\\MISA.CukCuk\\MISA.BL\\MISA.BL.csproj": {
-                "projectPath": "D:\\MISA Fresher\\Learning\\Source code\\C#\\MISA.CukCuk\\MISA.BL\\MISA.BL.csproj"
+              "D:\\nttrung\\MISA.CukCuk\\MISA.BL\\MISA.BL.csproj": {
+                "projectPath": "D:\\nttrung\\MISA.CukCuk\\MISA.BL\\MISA.BL.csproj"
               },
-              "D:\\MISA Fresher\\Learning\\Source code\\C#\\MISA.CukCuk\\MISA.Common\\MISA.Common.csproj": {
-                "projectPath": "D:\\MISA Fresher\\Learning\\Source code\\C#\\MISA.CukCuk\\MISA.Common\\MISA.Common.csproj"
+              "D:\\nttrung\\MISA.CukCuk\\MISA.Common\\MISA.Common.csproj": {
+                "projectPath": "D:\\nttrung\\MISA.CukCuk\\MISA.Common\\MISA.Common.csproj"
               },
-              "D:\\MISA Fresher\\Learning\\Source code\\C#\\MISA.CukCuk\\MISA.Entities\\MISA.Entities.csproj": {
-                "projectPath": "D:\\MISA Fresher\\Learning\\Source code\\C#\\MISA.CukCuk\\MISA.Entities\\MISA.Entities.csproj"
+              "D:\\nttrung\\MISA.CukCuk\\MISA.Entities\\MISA.Entities.csproj": {
+                "projectPath": "D:\\nttrung\\MISA.CukCuk\\MISA.Entities\\MISA.Entities.csproj"
               }
             }
           }
@@ -146,23 +151,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\MISA Fresher\\Learning\\Source code\\C#\\MISA.CukCuk\\MISA.DL\\MISA.DL.csproj": {
+    "D:\\nttrung\\MISA.CukCuk\\MISA.DL\\MISA.DL.csproj": {
+      "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MISA Fresher\\Learning\\Source code\\C#\\MISA.CukCuk\\MISA.DL\\MISA.DL.csproj",
+        "projectUniqueName": "D:\\nttrung\\MISA.CukCuk\\MISA.DL\\MISA.DL.csproj",
         "projectName": "MISA.DL",
-        "projectPath": "D:\\MISA Fresher\\Learning\\Source code\\C#\\MISA.CukCuk\\MISA.DL\\MISA.DL.csproj",
+        "projectPath": "D:\\nttrung\\MISA.CukCuk\\MISA.DL\\MISA.DL.csproj",
         "frameworks": {
           "net472": {
             "projectReferences": {
-              "D:\\MISA Fresher\\Learning\\Source code\\C#\\MISA.CukCuk\\MISA.Common\\MISA.Common.csproj": {
-                "projectPath": "D:\\MISA Fresher\\Learning\\Source code\\C#\\MISA.CukCuk\\MISA.Common\\MISA.Common.csproj"
+              "D:\\nttrung\\MISA.CukCuk\\MISA.Common\\MISA.Common.csproj": {
+                "projectPath": "D:\\nttrung\\MISA.CukCuk\\MISA.Common\\MISA.Common.csproj"
               },
-              "D:\\MISA Fresher\\Learning\\Source code\\C#\\MISA.CukCuk\\MISA.Entities\\MISA.Entities.csproj": {
-                "projectPath": "D:\\MISA Fresher\\Learning\\Source code\\C#\\MISA.CukCuk\\MISA.Entities\\MISA.Entities.csproj"
+              "D:\\nttrung\\MISA.CukCuk\\MISA.Entities\\MISA.Entities.csproj": {
+                "projectPath": "D:\\nttrung\\MISA.CukCuk\\MISA.Entities\\MISA.Entities.csproj"
               }
             }
           }
@@ -172,11 +178,12 @@
         "net472": {}
       }
     },
-    "D:\\MISA Fresher\\Learning\\Source code\\C#\\MISA.CukCuk\\MISA.Entities\\MISA.Entities.csproj": {
+    "D:\\nttrung\\MISA.CukCuk\\MISA.Entities\\MISA.Entities.csproj": {
+      "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MISA Fresher\\Learning\\Source code\\C#\\MISA.CukCuk\\MISA.Entities\\MISA.Entities.csproj",
+        "projectUniqueName": "D:\\nttrung\\MISA.CukCuk\\MISA.Entities\\MISA.Entities.csproj",
         "projectName": "MISA.Entities",
-        "projectPath": "D:\\MISA Fresher\\Learning\\Source code\\C#\\MISA.CukCuk\\MISA.Entities\\MISA.Entities.csproj"
+        "projectPath": "D:\\nttrung\\MISA.CukCuk\\MISA.Entities\\MISA.Entities.csproj"
       },
       "frameworks": {
         "net472": {}
